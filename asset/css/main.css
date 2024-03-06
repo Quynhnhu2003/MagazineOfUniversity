@@ -23,6 +23,9 @@ a {
     text-decoration: none;
     color: #000;
 }
+.container {
+    max-width: 1400px;
+}
 header {
     position: relative;
 }
@@ -58,7 +61,7 @@ header {
 }
 .left .home_icon:hover {
     background: #DDE9D5;
-    color: #DDE9D536;
+    color: #363F30;
 }
 .container_search {
     width: 40px;
@@ -1027,3 +1030,217 @@ footer {
 }
 
 /* Category */
+.all_category header {
+    background-color: #dde9d572;
+}
+.all_category header .home_icon {
+    margin-left: 105px;
+    margin-right: 25px;
+}
+.all_category.brand_name {
+    text-align: center;
+    align-items: center;
+}
+.top_category {
+    padding: 20px 12px;
+    display: flex;
+}
+.top_category p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #62685F;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+.top_category p:last-child {
+    color: #000;
+    text-decoration: underline;
+}
+.top_category span {
+    height: 30px;
+    border-right: 3px solid #62685F;
+    margin-right: 10px;
+}
+
+.middle_category {
+    width: 100%;
+    display: flex;
+}
+.left_category {
+    flex: 1;
+}
+.left_category .title_left {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.left_category .title_left p {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 5%;
+}
+.left_category .title_left i {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+.list_filter {
+    width: 280px;
+    height: 95%;
+    border: 1px solid #304D44;
+    margin-right: 20px;
+}
+.list_filter .filter_category {
+    display: block;
+    width: 280px;
+}
+.category_filter {
+    display: block;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+.category_filter span,
+.top_reads_filter span,
+.newest_post_filter span {
+    font-size: 27px;
+}
+.category_filter i {
+    position: relative;
+    left: 50%;
+    top: 10%;
+}
+.title_sub {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+.title_sub i {
+    font-size: 20px;
+}
+.sub {
+    display: block;
+}
+.newest_post_filter {
+    display: block;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+.sub li,
+.newest_post_filter li,
+.top_reads_filter li { 
+    display: flex;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.sub li p,
+.newest_post_filter li p,
+.top_reads_filter li p {
+    width: 55%;
+    height: 15px;
+}
+.sub li input,
+.newest_post_filter li input,
+.top_reads_filter li input {
+    width: 17px;
+    height: 17px;
+    border: none;
+    outline: none;
+    background: #DDE9D5;
+    position: relative;
+    left: 20%;
+}
+.top_reads_filter {
+    display: block;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.right_category {
+    flex: 9;
+    margin-left: 10px;
+}
+.sort {
+    display: flex;
+    justify-content: flex-end;
+}
+.sort p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sort select {
+    margin-left: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+.list_article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article_items {
+    width: 505px;
+    height: 300px;
+    display: flex;
+    margin: 30px 0 20px 10px;
+    background: #e4eede36;
+    padding: 20px;
+    box-shadow: 0 5px 4px 0 #DDE9D5;
+    border-radius: 2%;
+    transform: translateY(0);
+    transition: 0.8s;
+    cursor: pointer;
+}
+.article_items:hover {
+    background-color: #ebf7e4;
+    transform: translateY(-4px);
+}
+.article_items img {
+    width: 150px;
+    height: 220px;
+}
+.content {
+    padding-left: 10px;
+}
+.title_acticle {
+    font-size: 20px;
+    font-weight: 700;
+}
+.article_items button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    background-color: #918A8033;
+    width: 87px;
+    height: 31px;
+    float: right;
+    transition: .7s;
+}
+.article_items button:hover {
+    background-color: #7488738c;
+}
+.pagination {
+    position: relative;
+    left: 35%;
+    top: 1%;
+}
+.pagination i {
+    padding: 6px 15px;
+    text-align: center;
+}
+.pagination ul li {
+    padding-right: 15px;
+}
+.pagination ul li button {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #DDE9D5;
+}
