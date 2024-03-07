@@ -85,6 +85,7 @@ const oldest_post = document.querySelector(".oldest_post");
 
 // Go To Top
 const toTop = document.querySelector(".js-gotop");
+console.log(toTop);
 
 window.addEventListener("scroll", () => {
     if(window.pageYOffset > 250) {
