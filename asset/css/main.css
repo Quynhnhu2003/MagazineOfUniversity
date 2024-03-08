@@ -1030,33 +1030,41 @@ footer {
 }
 
 /* Category */
-.all_category header {
+.all_category header,
+.details header {
     background-color: #dde9d572;
 }
-.all_category header .home_icon {
+.all_category header .home_icon,
+.details header .home_icon {
     margin-left: 105px;
     margin-right: 25px;
 }
-.all_category.brand_name {
+.all_category.brand_name,
+.details.brand_name {
     text-align: center;
     align-items: center;
 }
-.top_category {
+.top_page {
     padding: 30px 12px;
     display: flex;
+    width: 100%;
 }
-.top_category p {
+.top_page p {
     font-size: 18px;
     font-weight: 600;
     color: #62685F;
     text-transform: uppercase;
     padding-right: 15px;
 }
-.top_category p:last-child {
+.top_page p:last-child {
+    width: 20%;
     color: #000;
     text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.top_category span {
+.top_page span {
     height: 30px;
     border-right: 3px solid #62685F;
     margin-right: 10px;
@@ -1170,7 +1178,7 @@ a.title_submenu {
 .newest_post_filter li p,
 .top_reads_filter li p {
     font-size: 17px;
-    width: 60%;
+    width: 63.5%;
     height: 25px;
     white-space: nowrap;
     overflow: hidden;
@@ -1294,4 +1302,166 @@ a.title_submenu {
     border: none;
     background: none;
     background-color: #DDE9D5;
+}
+
+/* Detail */
+.article {
+    width: 100%;
+    height: 100%;
+    min-height: 1200px;
+    display: flex;
+}
+.left_article {
+    background-color: #EAE0CD;
+    width: 50%;
+    height: 120%;
+    padding: 25px;
+    margin-right: 25px;
+}
+.left_article .title_article {
+    width: 100%;
+    height: 8%;
+}
+.left_article .content_article {
+    font-size: 18px;
+    line-height: 30px;
+    height: 1150px;
+    overflow-x: hidden;
+    width: 100%;
+}
+.left_article .content_article p {
+    overflow-wrap: break-word;
+    padding: 0 20px;
+    text-align: justify;
+}
+.left_article .content_article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.left_article button {
+    margin-top: 15px;
+    float: right;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #f0eadcc8;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.right_article {
+    margin-left: 35px;
+    width: 40%;
+}
+.right_article img.img_article {
+    width: 550px;
+    height: 650px;
+    margin-bottom: 10px;
+}
+.right_article .author_time_article {
+    width: 650px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.right_article .author_time_article .author {
+    display: flex;
+    font-size: 18px;
+    color: #363F30;
+}
+.right_article .author_time_article .author img {
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.right_article .author_time_article .author p {
+    text-align: center;
+    padding-top: 10px;
+    line-height: 37px;
+}
+.right_article .author_time_article .time {
+    font-size: 18px;
+    font-weight: 600;
+    color: #7d6545;
+}
+.right_article .like_comment_number {
+    display: flex;
+    border-bottom: 1px solid #363F30;
+    width: 650px;
+    padding-bottom: 10px;
+}
+.right_article .like_comment_number .like_article,
+.right_article .like_comment_number .comment_article  {
+    font-size: 18px;
+    margin-right: 25px;
+}
+.right_article .like_comment_number .like_article i,
+.right_article .like_comment_number .comment_article i {
+    padding-right: 5px;
+}
+.right_article .like_comment_number .like_article i:hover {
+    color: red;
+}
+.right_article .show_all_comments {
+    width: 650px;
+    margin: 15px 0;
+    border: 1px solid #363F304A;
+    border-radius: 5px;
+    padding: 10px 15px;
+    height: 1000px;
+    overflow-x: hidden; 
+}
+.right_article .show_all_comments .user_comment {
+    margin-bottom: 25px;
+}
+.right_article .show_all_comments .user_info {
+    width: 40%;
+    display: flex;
+    margin-bottom: -8px;
+}
+.right_article .show_all_comments .user_info img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.right_article .show_all_comments .user_info p {
+    font-size: 16px;
+}
+.right_article .show_all_comments .content_comment {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px;
+}
+.right_article .show_all_comments button {
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #EAE0CD;
+    width: 115px;
+    height: 39px;
+    border-radius: 5px;
+}
+.right_article .write_comment_area {
+    width: 650px;
+    display: block;
+    border-top: 1px solid #000;
+    padding: 15px 0;
+}
+.right_article .write_comment_area button {
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #EAE0CD;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
 }
