@@ -154,3 +154,5 @@ function validation() {
     form.classList.add('valid');
     return true;
 }
+
+console.log("Hello friend!!!")

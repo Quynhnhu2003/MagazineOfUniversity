@@ -1055,6 +1055,7 @@ footer {
     color: #62685F;
     text-transform: uppercase;
     padding-right: 15px;
+    cursor: pointer;
 }
 .top_page p:last-child {
     width: 20%;
@@ -1396,17 +1397,24 @@ a.title_submenu {
     width: 650px;
     padding-bottom: 10px;
 }
-.right_article .like_comment_number .like_article,
+.right_article .like_comment_number .like_number,
 .right_article .like_comment_number .comment_article  {
     font-size: 18px;
     margin-right: 25px;
 }
-.right_article .like_comment_number .like_article i,
-.right_article .like_comment_number .comment_article i {
+.right_article .like_comment_number .like_article .like,
+.right_article .like_comment_number .comment_article .comment {
     padding-right: 5px;
 }
-.right_article .like_comment_number .like_article i:hover {
+.like.liked {
     color: red;
+    transition: color 0.2s ease-in-out;
+}
+.btn_download {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
 }
 .right_article .show_all_comments {
     width: 650px;
@@ -1414,8 +1422,10 @@ a.title_submenu {
     border: 1px solid #363F304A;
     border-radius: 5px;
     padding: 10px 15px;
-    height: 1000px;
+    min-height: 415px;
+    max-height: 1000px;
     overflow-x: hidden; 
+    transition: max-height 0.5s ease-out; 
 }
 .right_article .show_all_comments .user_comment {
     margin-bottom: 25px;
