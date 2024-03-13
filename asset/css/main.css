@@ -405,6 +405,7 @@ header {
 .slider .dots li.active{
     width: 30px;
 }
+
 /* historical post */
 .historical_post {
     padding: 30px 55px;
@@ -437,11 +438,11 @@ header {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 50px;
-    transition: all 0.5s;
-    transform: rotateY(0);
+    transform: translateY(0);
     /* width: 300px;
     max-width: 350px; */
     height: 40px;
+    transition: ease-in 0.5s;
 }
 .title:hover {
     transform: translateY(-20px);
@@ -1615,9 +1616,9 @@ a.title_submenu {
     justify-content: center;
     cursor: default;
 }
-.top_search .line {
+.line {
         margin-top: 20px;
-        width: 350px;
+        width: 470px;
         height: 5px;
         background: linear-gradient(
           to bottom,
@@ -1660,4 +1661,277 @@ a.title_submenu {
 }
 .result .article_items {
     width: 445px;
+}
+
+/* Submission */
+.announcements {
+    position: relative;
+    left: 3%;
+    display: block;
+    width: 1300px;
+    height: 800px;
+    min-height: 700px;
+    background-color: #F5E6C536;
+    padding: 40px;
+    overflow-x: hidden; 
+}
+.announcements h3.title_announce {
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #363F30;
+    transition: all 0.5s;
+}
+.announcements h3.title_announce:hover {
+    transform: skew(15deg);
+}
+.content_announcements {
+    padding: 0 20px;
+    margin-top: 25px;
+}
+.content_announcements {
+    font-size: 18px;
+}
+.content_announcements .requirment ol {
+    padding-left: 10px;
+}
+.list_requirment {
+    list-style: lower-alpha;
+}
+.list_notes {
+    list-style: square;
+}
+.submission {
+    margin-top: 100px;
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+}
+.first_submission,
+.re_submission {
+    width: 550px;
+    height: 250px;
+    background-color: #F5E6C536;
+    padding: 20px 40px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+.tittle_submission {
+    font-size: 18px;
+    font-weight: 500;
+}
+.date_submission {
+    width: 100%;
+    height: 50px;
+    background-color: #363F3080;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 7px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.date_submission i {
+    margin-right: 10px;
+    color: #fff;
+}
+.link_add_submission {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.link_add_submission i {
+    margin-right: 5px;
+    font-size: 25px;
+    align-items: center;
+}
+.recently_submitted {
+    margin-top: 100px;
+    width: 1300px;
+    height: 500px;
+    background-color: #F5E6C536; 
+    padding: 20px 40px;   
+}
+.item_submitted {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 10px;
+}
+.tittle_submitted {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #363F30;
+}
+.info_submitted {
+    width: 80%;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.btn_submitted {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    float: right;
+}
+.btn_submitted button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 22px;
+    margin-right: 20px;
+    color: #363F30CC;
+    transition: color 0.5s;
+}
+.btn_submitted button:hover {
+    color: #000;
+}
+.btn_showall {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #363F3080;
+    margin-top: 10px;
+    transform: translateY(0);
+    transition: all 0.7s;
+}
+.btn_showall:hover {
+    transform: translateY(-5px);
+    background-color: #363F30;
+}
+
+/* Add Submissions */
+.add_submission_conatiner {
+    background-color: #F5E6C536;
+    padding: 50px 100px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.add_submission_conatiner h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.details_submission {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px 50px;
+    width: 1275px;
+}
+.due_to,
+.submission_status {
+    width: 1000px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.due_to p,
+.submission_status p,
+.attachment p,
+.select_topic p,
+.author p,
+.submission_comment p,
+.term_conditions p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.due_to input,
+.attachment input,
+.author_input input {
+    /* border: none; */
+    border-radius: 5px;
+    background: none;
+    width: 1075px;
+    height: 40px;
+    padding: 5px;
+    font-size: 18px;
+}
+.submission_status p:last-child {
+    border: 1px solid #000;
+    width: 1075px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FF8730;
+    text-align: center;
+}
+.submission_status p:last-child i {
+    margin-right: 10px;
+}
+.attachment input {
+    margin-bottom: 25px;
+}
+.list_topic {
+    display: flex;
+    max-width: 600px;
+    margin-left: 20px;
+}
+.select_topic ol.column_list {
+    line-height: 45px;
+    column-count: 2;
+    column-gap: 100px;
+    padding: 0;
+}
+.select_topic ol li input {
+    margin-left: 10px;
+}
+.author_input {
+    margin-bottom: 20px;
+}
+.author_input input {
+    padding: 20px 45px;
+}
+.author_input i {
+    position: relative;
+    top: 0;
+    right: 90%;
+} 
+.submission_comment input {
+    border-radius: 5px;
+    background: none;
+    width: 1075px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.term_conditions .term_and_conditions {
+    width: 1075px;
+    padding: 15px;
+    border: 1px solid #000;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+}
+.term_conditions .term_and_conditions ul {
+    display: block;
+}
+.btn_add_article {
+    margin-top: 25px;
+}
+.btn_add_article button {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    width: 170px;
+    height: 50px;
+    background-color: #363F3080;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    transform: translateY(0);
+    transition: all 1s;
+}
+.btn_add_article button:hover {
+    transform: translateY(-5px);
+    background-color: #363F30;
 }
