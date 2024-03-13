@@ -178,6 +178,13 @@ header {
     transform: translate(0%, 11%);
 }
 
+.hamburger_menu {
+    color: #2f1a1a;
+    font-size: 15px;
+    cursor: pointer;
+    /* display: none; */
+}
+
 /* Navbar */
 .hero {
     background: #748873;
@@ -239,6 +246,30 @@ header {
     z-index: 99;
     opacity: 1;
     margin-top: 0;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 1900px;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.601);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar li i {
+    font-size: 25px;
+    color: black;
+    float: right;
+    margin: 10px 35px;
 }
 
 /* slider */
@@ -374,12 +405,6 @@ header {
 .slider .dots li.active{
     width: 30px;
 }
-@media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
-    }
-}
-
 /* historical post */
 .historical_post {
     padding: 30px 55px;

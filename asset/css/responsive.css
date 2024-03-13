@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px){
+    .slider{
+        height: 600px;
+        width: 1150px;
+    }
+    .slider .list .item{
+        width: 11500px;
+        max-width: 1150px;
+        height: 100%;
+        display: flex;
+        background-image: url('../img/bg-slider.jpg');
+        justify-content: space-between;
+    }
+    .slider .list .item .hot_news_introduction span {
+        font-size: 18px;
+        margin: 25px 0;
+    }
+    .hideMobile {
+        display: none;
+    }
+}
