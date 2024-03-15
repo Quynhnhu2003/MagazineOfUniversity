@@ -258,8 +258,88 @@
                             </div>
                         </div>
                     </a>
+                    <a href="#">
+                        <div class="item_submitted">
+                            <div class="info_submitted">
+                                <p class="title_item">
+                                    Submission's name: Lorem ipsum dolor sit amet consectetur, adipisicing elit qui optio qui optio qui optio
+                                </p>
+                                <p class="">
+                                    <strong>Faculty Name</strong> - <strong>Topic</strong> - <strong>Coordinator Name/ID</strong>
+                                </p>
+                            </div>
+                            <div class="btn_submitted">
+                                <button class="btn_edit" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn_comment" type="button"><i class="fa-solid fa-comment"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item_submitted">
+                            <div class="info_submitted">
+                                <p class="title_item">
+                                    Submission's name: Lorem ipsum dolor sit amet consectetur, adipisicing elit qui optio qui optio qui optio
+                                </p>
+                                <p class="">
+                                    <strong>Faculty Name</strong> - <strong>Topic</strong> - <strong>Coordinator Name/ID</strong>
+                                </p>
+                            </div>
+                            <div class="btn_submitted">
+                                <button class="btn_edit" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn_comment" type="button"><i class="fa-solid fa-comment"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item_submitted">
+                            <div class="info_submitted">
+                                <p class="title_item">
+                                    Submission's name: Lorem ipsum dolor sit amet consectetur, adipisicing elit qui optio qui optio qui optio
+                                </p>
+                                <p class="">
+                                    <strong>Faculty Name</strong> - <strong>Topic</strong> - <strong>Coordinator Name/ID</strong>
+                                </p>
+                            </div>
+                            <div class="btn_submitted">
+                                <button class="btn_edit" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn_comment" type="button"><i class="fa-solid fa-comment"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item_submitted">
+                            <div class="info_submitted">
+                                <p class="title_item">
+                                    Submission's name: Lorem ipsum dolor sit amet consectetur, adipisicing elit qui optio qui optio qui optio
+                                </p>
+                                <p class="">
+                                    <strong>Faculty Name</strong> - <strong>Topic</strong> - <strong>Coordinator Name/ID</strong>
+                                </p>
+                            </div>
+                            <div class="btn_submitted">
+                                <button class="btn_edit" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn_comment" type="button"><i class="fa-solid fa-comment"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item_submitted">
+                            <div class="info_submitted">
+                                <p class="title_item">
+                                    Submission's name: Lorem ipsum dolor sit amet consectetur, adipisicing elit qui optio qui optio qui optio
+                                </p>
+                                <p class="">
+                                    <strong>Faculty Name</strong> - <strong>Topic</strong> - <strong>Coordinator Name/ID</strong>
+                                </p>
+                            </div>
+                            <div class="btn_submitted">
+                                <button class="btn_edit" type="button"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="btn_comment" type="button"><i class="fa-solid fa-comment"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                    <button id="view_all_btn" type="button">View All</button>
                 </div>
-                <button class="btn_showall" type="button">Show All</button>
             </section>
         </main>
     </section>
@@ -348,5 +428,38 @@
     <!-- Main -->
     <script src="../asset/js/main.js"></script>
     <script src="../asset/js/more.js"></script>
+    <script>
+            // Show more comment
+            document.addEventListener('DOMContentLoaded', function () {
+            const showMoreButton = document.getElementById('view_all_btn');
+            const submitted = document.querySelectorAll('.item_submitted');
+            const submittedPerPage = 2;
+            let visiblesubmitted = submittedPerPage;
+
+            // Hide all submitted except the first `visiblesubmitted`
+            for (let i = 0; i < submitted.length; i++) {
+                if (i >= visiblesubmitted) {
+                    submitted[i].style.display = 'none';
+                }
+            }
+
+            // Add event listener to show more button
+            showMoreButton.addEventListener('click', function () {
+                visiblesubmitted += submittedPerPage;
+
+                // Show next `submittedPerPage` submitted
+                for (let i = 0; i < submitted.length; i++) {
+                    if (i < visiblesubmitted) {
+                        submitted[i].style.display = 'block';
+                    }
+                }
+
+                // Hide "Show More submitted" button if all submitted are visible
+                if (visiblesubmitted >= submitted.length) {
+                    showMoreButton.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

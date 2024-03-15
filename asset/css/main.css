@@ -1430,10 +1430,14 @@ a.title_submenu {
 .right_article .like_comment_number .comment_article  {
     font-size: 18px;
     margin-right: 25px;
+    display: flex;
 }
 .right_article .like_comment_number .like_article .like,
 .right_article .like_comment_number .comment_article .comment {
     padding-right: 5px;
+}
+.comment_article i {
+    padding-top: 5px;
 }
 .like.liked {
     color: red;
@@ -1451,7 +1455,7 @@ a.title_submenu {
     border: 1px solid #363F304A;
     border-radius: 5px;
     padding: 10px 15px;
-    min-height: 415px;
+    min-height: 300px;
     max-height: 1000px;
     overflow-x: hidden; 
     transition: max-height 0.5s ease-out; 
@@ -1748,9 +1752,37 @@ a.title_submenu {
 .recently_submitted {
     margin-top: 100px;
     width: 1300px;
-    height: 500px;
+    height: 100%;
     background-color: #F5E6C536; 
     padding: 20px 40px;   
+}
+.submitted_article {
+    margin: 15px 0;
+    border: 1px solid #363F304A;
+    border-radius: 5px;
+    padding: 10px 15px;
+    min-height: 300px;
+    max-height: 1000px;
+    overflow-x: hidden; 
+    transition: max-height 0.5s ease-out; 
+}
+.submitted_article button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #363F3080;
+    margin-top: 20px;
+    transform: translateY(0);
+    transition: all 0.7s;
+}
+.submitted_article button:hover {
+    transform: translateY(-5px);
+    background-color: #363F30;
 }
 .item_submitted {
     display: flex;
@@ -1788,24 +1820,6 @@ a.title_submenu {
 }
 .btn_submitted button:hover {
     color: #000;
-}
-.btn_showall {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 20px;
-    width: 160px;
-    height: 50px;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #363F3080;
-    margin-top: 10px;
-    transform: translateY(0);
-    transition: all 0.7s;
-}
-.btn_showall:hover {
-    transform: translateY(-5px);
-    background-color: #363F30;
 }
 
 /* Add Submissions */
