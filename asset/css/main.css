@@ -1853,6 +1853,7 @@ a.title_submenu {
     height: 40px;
     padding: 5px;
     font-size: 18px;
+    background-color: #fff;
 }
 .submission_status p:last-child {
     border: 1px solid #000;
@@ -1862,6 +1863,7 @@ a.title_submenu {
     padding: 5px;
     color: #FF8730;
     text-align: center;
+    background-color: #fff;
 }
 .submission_status p:last-child i {
     margin-right: 10px;
@@ -1902,6 +1904,7 @@ a.title_submenu {
     padding: 0 20px;
     font-size: 18px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 .term_conditions .term_and_conditions {
     width: 1075px;
@@ -1910,6 +1913,8 @@ a.title_submenu {
     max-height: 300px;
     overflow-y: scroll;
     margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 3px;
 }
 .term_conditions .term_and_conditions ul {
     display: block;
@@ -1934,4 +1939,40 @@ a.title_submenu {
 .btn_add_article button:hover {
     transform: translateY(-5px);
     background-color: #363F30;
+}
+.feedback_submission {
+    width: 1275px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px 50px;
+}
+.comments p,
+.feedback_by p  {
+    font-size: 20px;
+    font-weight: 600;
+}
+.comment_content {
+    width: 1075px;
+    padding: 15px;
+    border: 1px solid #000;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    line-height: 35px;
+}
+.feedback_by {
+    margin: 30px 0;
+}
+.feedback_by h5 {
+    width: 1075px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.feedback_by h5 i {
+    margin-right: 10px;
 }
