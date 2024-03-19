@@ -116,16 +116,26 @@
     .post_item p {
         font-size: 15px;
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        margin-top: -5px;
+    }
+    .content_title {
+        display: none;
     }
     .viewall {
         display: none;
     }
+    .post_item {
+        height: 200px;
+    }
+    .post_item img {
+        height: 150px;
+    }
     .post_item .content button {
         position: absolute;
-        top: 83%;
+        top: 80%;
         left: 85%;
     }
     .category_container .title_container {
