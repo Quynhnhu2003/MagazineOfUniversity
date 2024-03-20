@@ -120,6 +120,7 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         margin-top: -5px;
+        width: 450px;
     }
     .content_title {
         display: none;

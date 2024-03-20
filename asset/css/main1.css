@@ -1,0 +1,116 @@
+/* All Submission */
+.main_content {
+    margin-top: 25px;
+    display: flex;
+}
+.main_content .left_category {
+    flex: 2;
+    display: block;
+    background-color: #DDE9D566;
+    max-width: 300px;
+    height: 1400px;
+}
+.main_content .left_category ul {
+    display: block;
+}
+.main_content .left_category ul li {
+    line-height: 55px;
+    height: 60px;
+}
+.main_content .left_category ul li.active_link {
+    background-color: #304D447D;
+}
+.main_content .left_category ul li.active_link a {
+    color: #fff;
+}
+.main_content .left_category ul li a {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 57px;
+}
+.right_category {
+    margin-left: 40px;
+}
+.subnavigate ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.subnavigate ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+}
+.content_table {
+    display: none;
+}
+.content_table.active {
+    display: block;
+    animation: slideIn 0.5s forwards;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.table_submission {
+    margin-top: 45px;
+}
+.table_submission thead {
+    background-color: #DDE9D533;
+    height: 55px;
+    text-align: center;
+}
+.table_submission thead tr th {
+    padding-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.table_submission tbody tr td {
+    padding: 20px 60px;
+}
+.table_submission tbody tr td p {
+    font-size: 17px;
+}
+.table_submission tbody tr td p.not_submitted {
+    color: #EA0D0D;
+}
+.table_submission tbody tr td.date_time {
+    font-weight: 600;
+    text-align: center;
+    color: #2f1a1a;
+    font-size: 17px;
+}
+.table_submission tbody tr td p.submitted_status {
+    color: #0E34FD;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.table_submission tbody tr td p.not_submitted_status {
+    color: #EA0D0D;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.table_submission tbody tr td.action button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: #363F30;
+    padding: 15px 20px;
+    text-align: center;
+}
+.table_submission tbody tr td.action button:hover {
+    color: #363f30ca;
+}

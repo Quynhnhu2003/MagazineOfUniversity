@@ -19,7 +19,7 @@
 <body>
     <section class="all_category">
         <header>
-            <section class="header_logo">
+            <section class="header_logo container">
                 <div class="left">
                     <a class="home_icon" href="index.html"><i class="fa-solid fa-house"></i></a>
                     <div class="container_search">
@@ -37,7 +37,19 @@
                 </div>
                 <div class="right">
                     <button><i class="fa-solid fa-bell"></i></button>
-                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    <!-- <a href="login.html"><i class="fa-solid fa-user"></i></a> -->
+                    <div class="dropdown">
+                        <a class="btn dropdown_icon dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="submission.html">Submission</a></li>
+                          <li><a class="dropdown-item" href="#">Recently seen</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
                 </div>
             </section>
         </header>
