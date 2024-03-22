@@ -130,6 +130,7 @@ header {
     color: #363F30;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 .right {
     display: flex;
@@ -179,9 +180,6 @@ header {
 .right .dropdown ul li {
     width: 200px;
     height: 50px;
-}
-.right .dropdown ul li:hover {
-
 }
 .right .dropdown ul li a {
     display: flex;

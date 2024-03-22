@@ -1,4 +1,12 @@
 /* All Submission */
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #000;
+}
+/* All Submission */
 .main_content {
     margin-top: 25px;
     display: flex;
@@ -40,8 +48,14 @@
     display: inline-block;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
+    /* font-weight: 600; */
+    transition: ease-in-out .7s active;
+    margin-right: 25px;
+}
+.subnavigate ul li.active {
     font-weight: 600;
+    border-bottom: 5px solid #304D447D;
 }
 .content_table {
     display: none;
