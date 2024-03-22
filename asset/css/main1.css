@@ -147,14 +147,16 @@ a:hover {
 
 /* Set Deadline */
 .set-new,
-.history_deadline {
+.history_deadline,
+.edit_deadline {
     margin: 35px 0;
     background-color: #DDE9D533;
     height: 1300px;
     box-shadow: 0 4px 4px 0 #00000040;
     padding: 20px 50px;
 }
-.set-new p {
+.set-new p,
+.edit_deadline p {
     padding: 20px 0 50px 0;
     font-size: 30px;
     font-weight: 600;
