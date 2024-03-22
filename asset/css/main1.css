@@ -88,17 +88,20 @@ a:hover {
     }
 }
 .table_submission,
-.table_display_deadline {
+.table_display_deadline,
+.table_feedback {
     margin-top: 45px;
 }
 .table_submission thead,
-.table_display_deadline thead {
+.table_display_deadline thead,
+.table_feedback thead {
     background-color: #DDE9D533;
     height: 55px;
     text-align: center;
 }
 .table_submission thead tr th,
-.table_display_deadline thead tr th {
+.table_display_deadline thead tr th,
+.table_feedback thead tr th {
     padding-bottom: 15px;
     font-size: 18px;
     text-transform: uppercase;
@@ -106,26 +109,30 @@ a:hover {
 .table_submission tbody tr td {
     padding: 20px 60px;
 }
-.table_submission tbody tr td p {
+.table_submission tbody tr td p,
+.table_feedback tbody tr td p {
     font-size: 17px;
 }
 .table_submission tbody tr td p.not_submitted {
     color: #EA0D0D;
 }
-.table_submission tbody tr td.date_time {
+.table_submission tbody tr td.date_time,
+.table_feedback tbody tr td.date_time {
     font-weight: 600;
     text-align: center;
     color: #2f1a1a;
     font-size: 17px;
 }
-.table_submission tbody tr td p.submitted_status {
+.table_submission tbody tr td p.submitted_status,
+.table_feedback tbody tr td p.reviewed_status {
     color: #0E34FD;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
 }
-.table_submission tbody tr td p.not_submitted_status {
+.table_submission tbody tr td p.not_submitted_status,
+.table_feedback tbody tr td p.unreviewed_status {
     color: #EA0D0D;
     font-size: 15px;
     font-weight: 600;
@@ -239,4 +246,19 @@ a:hover {
 .category_deadline span:first-child {
     font-weight: 700;
     font-size: 22px;
+}
+/* Feedback Provider */
+.table_feedback tbody tr td.feedback_content {
+    width: 330px;
+    margin-right: 10px;
+}
+.table_feedback tbody tr td {
+    padding: 20px 40px;
+}
+.table_feedback tbody tr td.action button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+    padding: 0 5px;
 }
