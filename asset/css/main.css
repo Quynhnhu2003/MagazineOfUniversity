@@ -1085,20 +1085,23 @@ footer {
 .all_category header,
 .details header,
 .search_page header,
-.allsubmission header {
+.allsubmission header,
+.setdeadline header {
     background-color: #dde9d572;
 }
 .all_category header .home_icon,
 .details header .home_icon,
 .search_page header .home_icon,
-.allsubmission .home_icon   {
+.allsubmission .home_icon,
+.setdeadline .home_icon {
     margin-left: 105px;
     margin-right: 25px;
 }
 .all_category.brand_name,
 .details.brand_name,
 .search_page.brand_name,
-.allsubmission.brand_name  {
+.allsubmission.brand_name,
+.setdeadline .brand_name  {
     text-align: center;
     align-items: center;
 }
