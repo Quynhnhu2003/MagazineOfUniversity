@@ -20,7 +20,7 @@
     <title>Magazine of University</title>
 </head>
 <body>
-    <section class="allsubmission">
+    <section class="setdeadline">
         <header>
             <section class="header_logo container">
                 <div class="left">
@@ -56,25 +56,20 @@
                 </div>
             </section>
         </header>
-        
-        <div class="top_page container">
-            <p>HOME</p> <span></span> 
-            <p>DASHBOARD</p>
-        </div>
 
         <section class="main_content container">
             <div class="left_category">
                 <ul>
-                    <li class="active_link">
+                    <li>
                         <a href="allSubmission.html">All Submission</a>
                     </li>
                     <li>
                         <a href="#">Add Notification</a>
                     </li>
                     <li>
-                        <a href="setDaedline.html">Set Deadline</a>
+                        <a href="#">Set Deadline</a>
                     </li>
-                    <li>
+                    <li class="active_link">
                         <a href="feedbackProvider.html">Feedback Provided</a>
                     </li>
                     <li>
@@ -85,22 +80,21 @@
             <div class="right_category">
                 <nav class="subnavigate">
                     <ul>
-                        <li class="active">All Submissions</li>
-                        <li>Submitted</li>
-                        <li>Unsubmitted</li>
+                        <li class="active">Reviewed Submissions</li>
+                        <li>Unreviewed Submissions</li>
                     </ul>
                     <button>
                         <i class="fa-solid fa-filter"></i>
                     </button>
                 </nav>
-
-                <div id="all-submissions" class="content_table active">
+                <div id="reviewed-submissions" class="content_table active">
                     <div class="table-responsive-lg">
-                        <table class="table table-hover table_submission">
+                        <table class="table table-hover table_feedback">
                             <thead>
                                 <tr>
                                     <th scope="col">Articles List</th>
-                                    <th scope="col">Last Modified</th>
+                                    <th scope="col">Feedback Content</th>
+                                    <th scope="col">Feedback Date</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Actions</th>
                                 </tr>
@@ -115,31 +109,9 @@
                                             Submission’s Name
                                         </p>
                                     </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
                                         </p>
                                     </td>
                                     <td class="date_time">
@@ -147,17 +119,17 @@
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -169,22 +141,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -196,31 +173,9 @@
                                             Submission’s Name
                                         </p>
                                     </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
                                         </p>
                                     </td>
                                     <td class="date_time">
@@ -228,17 +183,17 @@
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -250,22 +205,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -277,22 +237,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -304,22 +269,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -331,22 +301,91 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="reviewed_status">
+                                            Reviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <p class="student_name">
+                                            Student's name
+                                        </p>
+                                        <p class="submission_name">
+                                            Submission’s Name
+                                        </p>
+                                    </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
+                                    <td class="date_time">
+                                        Tuesday/19/03/2024 <br>
+                                        2:31 PM
+                                    </td>
+                                    <td class="status">
+                                        <p class="reviewed_status">
+                                            Reviewed
+                                        </p>
+                                    </td>
+                                    <td class="action">
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">
+                                        <p class="student_name">
+                                            Student's name
+                                        </p>
+                                        <p class="submission_name">
+                                            Submission’s Name
+                                        </p>
+                                    </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
+                                    <td class="date_time">
+                                        Tuesday/19/03/2024 <br>
+                                        2:31 PM
+                                    </td>
+                                    <td class="status">
+                                        <p class="reviewed_status">
+                                            Reviewed
+                                        </p>
+                                    </td>
+                                    <td class="action">
+                                        <a href="showFeedbackInfo.html" class="btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -364,13 +403,14 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
-                <div id="submitted" class="content_table">
+                <div id="unreviewed-submission" class="content_table">
                     <div class="table-responsive-lg">
-                        <table class="table table_submission table-hover">
+                        <table class="table table-hover table_feedback">
                             <thead>
                                 <tr>
                                     <th scope="col">Articles List</th>
-                                    <th scope="col">Last Modified</th>
+                                    <th scope="col">Feedback Content</th>
+                                    <th scope="col">Feedback Date</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Actions</th>
                                 </tr>
@@ -385,22 +425,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -412,22 +457,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -439,22 +489,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -466,22 +521,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -493,22 +553,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -520,22 +585,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -547,22 +617,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -574,22 +649,27 @@
                                             Submission’s Name
                                         </p>
                                     </td>
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
+                                        </p>
+                                    </td>
                                     <td class="date_time">
                                         Tuesday/19/03/2024 <br>
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -601,58 +681,9 @@
                                             Submission’s Name
                                         </p>
                                     </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="submitted_status">
-                                            Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="pagination">
-                        <i class="fa-solid fa-angle-left"></i>
-                        <ul>
-                            <li><button type="button">1</button></li>
-                            <li><button type="button">2</button></li>
-                            <li><button type="button">3</button></li>
-                            <li><button type="button">4</button></li>
-                            <li><button type="button">5</button></li>
-                        </ul>
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                </div>
-                <div id="unsubmitted" class="content_table">
-                    <div class="table-responsive-lg">
-                        <table class="table table_submission table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Articles List</th>
-                                    <th scope="col">Last Modified</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
+                                    <td class="feedback_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum odio....
                                         </p>
                                     </td>
                                     <td class="date_time">
@@ -660,233 +691,17 @@
                                         2:31 PM
                                     </td>
                                     <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
+                                        <p class="unreviewed_status">
+                                            Unreviewed
                                         </p>
                                     </td>
                                     <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">
-                                        <p class="student_name">
-                                            Student's name
-                                        </p>
-                                        <p class="not_submitted">
-                                            No submitted yet
-                                        </p>
-                                    </td>
-                                    <td class="date_time">
-                                        Tuesday/19/03/2024 <br>
-                                        2:31 PM
-                                    </td>
-                                    <td class="status">
-                                        <p class="not_submitted_status">
-                                            Not Submitted
-                                        </p>
-                                    </td>
-                                    <td class="action">
-                                        <button class="comment_btn" type="button">
-                                            <i class="fa-solid fa-comment"></i>
-                                        </button>
-                                        <button class="download_btn" type="button">
-                                            <i class="fa-solid fa-download"></i>
-                                        </button>
+                                        <a href="showFeedbackInfo.html" class="comment_btn" type="button">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="editFeedback.html" class="download_btn" type="button">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -906,9 +721,6 @@
                 </div>
             </div>
         </section>
-
-
-        <script src="/asset/js/main.js"></script>
     </section>
     <!-- Footer -->
     <footer>
