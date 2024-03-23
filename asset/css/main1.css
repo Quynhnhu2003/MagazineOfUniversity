@@ -262,3 +262,24 @@ a:hover {
     font-size: 20px;
     padding: 0 5px;
 }
+
+/* View Feedback */
+.author_article {
+    margin-bottom: 25px;
+}
+.author_article p {
+    display: block;
+    width: 100%;
+}
+.author_name,
+.submission_title,
+.date_time_modified,
+.status,
+.content_container,
+.date_time_feedback {
+    max-width: 500px;
+}
+.content_container {
+    max-height: 250px;
+    overflow-x: auto;
+}
