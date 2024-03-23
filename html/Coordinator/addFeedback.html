@@ -82,10 +82,10 @@
                     <p>HOME</p> <span></span> 
                     <p>DASHBOARD</p> <span></span> 
                     <p>REVIEWED SUBMISSION</p> <span></span>
-                    <p>Edit Feedback</p>
+                    <p>Add Feedback</p>
                 </div>
                 <div class="main_information">
-                    <h3>Edit Feedback</h3>
+                    <h3>Add Feedback</h3>
                     <div class="author_article ps-4">
                         <p class="d-block p-2 fs-5 text fw-bold">
                             Author Articles: <br>
@@ -124,10 +124,11 @@
                         <p class="d-block p-2 fs-5 text fw-bold">
                             Status: <br>
                             <div class="status bg-white p-3 mb-2 rounded">
-                                <input type="text" 
-                                class="form-control border border-white" 
-                                placeholder="Status publish" aria-label="Published" 
-                                aria-describedby="addon-wrapping">
+                                <select class="form-select border border-white" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected>Select status publish: </option>
+                                    <option value="1">Published</option>
+                                    <option value="2">Unpublished</option>
+                                  </select>
                             </div>
                         </p>
                     </div>
@@ -136,36 +137,15 @@
                             Feedback Content: <br>
                             <div class="content_container bg-white p-3 mb-2 rounded">
                                 <input type="text" 
-                                class="form-control border border-white" 
+                                class="form-control text-break border border-white" 
                                 placeholder="Feedback" 
-                                aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vestibulum nec nisi sed sem tristique volutpat. Curabitur 
-                                non mi id lectus gravida dictum. Sed nec est nec arcu fermentum
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vestibulum nec nisi sed sem tristique volutpat. Curabitur 
-                                non mi id lectus gravida dictum. Sed nec est nec arcu fermentum
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vestibulum nec nisi sed sem tristique volutpat. Curabitur 
-                                non mi id lectus gravida dictum. Sed nec est nec arcu fermentum" 
-                                aria-describedby="addon-wrapping">
-                            </div>
-                        </p>
-                    </div>
-                    <div class="feedback_date ps-4">
-                        <p class="d-block p-2 fs-5 text fw-bold rounded">
-                            Feedback Date: <br> 
-                            <div class="date_time_feedback bg-white p-3 mb-2">
-                                <input type="datetime" 
-                                class="form-control border border-white" 
-                                placeholder="Feedback date" 
-                                aria-label="23/03/2024, 12:00 AM" 
                                 aria-describedby="addon-wrapping">
                             </div>
                         </p>
                     </div>
                     <div class="btn_group ps-4 mt-5">
                         <button type="button" class="btn btn-outline-success btn-lg me-3">
-                            <i class="fa-regular fa-pen-to-square"></i> Update
+                            <i class="fa-regular fa-floppy-disk"></i> Save
                         </button>
                         <button type="button" class="btn btn-outline-warning btn-lg me-3">
                             <i class="fa-solid fa-arrow-rotate-left"></i> Reset

@@ -139,7 +139,8 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
 }
-.table_submission tbody tr td.action button {
+.table_submission tbody tr td.action button,
+.table_submission tbody tr td.action a {
     outline: none;
     border: none;
     background: none;
@@ -247,6 +248,7 @@ a:hover {
     font-weight: 700;
     font-size: 22px;
 }
+
 /* Feedback Provider */
 .table_feedback tbody tr td.feedback_content {
     width: 330px;
@@ -255,15 +257,14 @@ a:hover {
 .table_feedback tbody tr td {
     padding: 20px 40px;
 }
-.table_feedback tbody tr td.action button {
+.table_feedback tbody tr td.action button,
+.table_feedback tbody tr td.action a {
     outline: none;
     border: none;
     background: none;
     font-size: 20px;
     padding: 0 5px;
 }
-
-/* View Feedback */
 .author_article {
     margin-bottom: 25px;
 }
@@ -282,4 +283,8 @@ a:hover {
 .content_container {
     max-height: 250px;
     overflow-x: auto;
+}
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255,255,255);
 }
