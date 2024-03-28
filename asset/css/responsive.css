@@ -1,9 +1,13 @@
 /* Tablet */
 @media screen and (max-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
   /* Index */
   .header_logo,
   .all_category header,
-  .profile header {
+  .profile header,
+  .details header {
     width: 800px;
   }
   .container_search.active,
@@ -13,19 +17,22 @@
   }
   .home_icon,
   .all_category header .home_icon,
-  .profile .home_icon {
+  .profile .home_icon,
+  .details .home_icon {
     margin-right: 10px !important;
   }
   .brand_name,
   .all_category.brand_name,
-  .profile .brand_name {
+  .profile .brand_name,
+  .details .brand_name {
     padding-top: 25px;
     text-align: center;
     font-size: 22px;
   }
   .right button,
   .all_category.right button,
-  .profile .right button {
+  .profile .right button,
+  .details .right button {
     margin-right: 10px !important;
   }
   .hero {
@@ -203,8 +210,9 @@
     width: 800px;
   }
   .all_category header .home_icon,
-  .profile .home_icon {
-    margin-left: -5px;
+  .profile .home_icon,
+  .details .home_icon {
+    margin-left: -5px !important;
   }
   .top_page p {
     font-size: 15px;
@@ -297,5 +305,68 @@
   .article_content img {
     width: 35%;
     height: 220px;
+  }
+  /* Detail */
+  .article {
+    width: 800px;
+  }
+  .left_article {
+    margin-right: -10px;
+    padding: 15px;
+    width: 60%;
+  }
+  .left_article .title_article {
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .left_article .content_article p {
+    padding: 0 5px;
+  }
+  .right_article {
+    width: 50%;
+  }
+  .right_article .show_all_comments {
+    width: 340px;
+  }
+  .right_article .like_comment_number,
+  .right_article .author_time_article {
+    width: 340px;
+  }
+  .right_article .author_time_article .author img {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .right_article .author_time_article .time {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .right_article .write_comment_area {
+    width: 340px;
+  }
+  .similar_topic {
+    overflow-x: auto;
+  }
+  .similar_topic h3 {
+    font-size: 25px;
+  }
+  .similar_article_list .similar_item {
+    width: 300px;
+    height: 550px;
+  }
+  .similar_article_list .similar_item img {
+    width: 90%;
+    height: 300px;
+  }
+  .similar_article_list .similar_item .content_items p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .similar_article_list .similar_item .time_author p:first-child,
+  .similar_article_list .similar_item .time_author p:last-child {
+    font-size: 14px;
   }
 }
