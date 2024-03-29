@@ -369,4 +369,26 @@
   .similar_article_list .similar_item .time_author p:last-child {
     font-size: 14px;
   }
+  /* Login */
+  .signin {
+    width: 800px;
+    height: 630px;
+  }
+  .bg_content {
+    width: 45%;
+  }
+  .signin_cotainer {
+    width: 55%;
+    padding: 30px 10px;
+  }
+  .signin_content {
+    width: 700px;
+    height: 500px;
+    max-width: 750px;
+    left: -70px;
+  }
+  .container_box {
+    margin-bottom: 20px;
+    height: 250px;
+  }
 }
