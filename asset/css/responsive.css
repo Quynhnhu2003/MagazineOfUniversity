@@ -194,6 +194,7 @@
     margin-top: 100px;
     max-width: 750px;
     max-width: 800px;
+    margin: 100px 0px 0 0px;
   }
   .widget_brand {
     padding: 10px;
@@ -441,5 +442,41 @@
   .recently_submitted {
     max-width: 790px;
     padding: 20px 15px;
+  }
+  /* Add submission */
+  .add_submission_conatiner {
+    padding: 0;
+  }
+  .add_submission_conatiner h3 {
+    font-size: 25px;
+    padding: 40px 35px;
+    margin-bottom: 0;
+  }
+  .details_submission {
+    width: 90%;
+    padding: 20px 30px;
+    position: relative;
+    left: 5%;
+  }
+  .due_to input,
+  .attachment input {
+    width: 60%;
+  }
+  .submission_status p:last-child {
+    width: 60%;
+    height: 90px;
+    padding: 15px 0;
+  }
+  .author_input input,
+  .submission_comment input,
+  .term_conditions .term_and_conditions {
+    width: 95%;
+  }
+  .feedback_submission {
+    max-width: 800px;
+  }
+  .comment_content,
+  .feedback_by h5 {
+    width: 100%;
   }
 }
