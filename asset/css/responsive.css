@@ -8,13 +8,13 @@
   .all_category header,
   .profile header,
   .details header {
-    width: 800px;
+    max-width: 800px;
   }
   .container_search.active,
   .all_category.container_search.active,
   .profile .container_search.active,
   .search_page header .container_search.active {
-    width: 300px;
+    max-width: 300px;
   }
   .home_icon,
   .all_category header .home_icon,
@@ -42,30 +42,30 @@
   }
   .hero {
     background: #748873;
-    width: 800px;
+    max-width: 800px;
     height: 40px;
   }
   .hero nav ul li a.category {
-    width: 170px;
+    max-width: 170px;
     font-size: 15px;
     padding: 10px 0;
     transition: all ease 0.3s;
     margin-left: 10px;
   }
   .hero ul .submenu {
-    width: 220px;
+    max-width: 220px;
   }
   .hero ul .submenu li a {
-    width: 220px;
+    max-width: 220px;
     font-size: 12px;
     overflow-wrap: break-word;
   }
   .slider {
-    width: 800px;
+    max-width: 800px;
     height: 450px;
   }
   .slider .list .item {
-    width: 800px;
+    max-width: 800px;
     display: flex;
     justify-content: space-around;
   }
@@ -74,7 +74,7 @@
     top: -15%;
   }
   .slider .list .item img {
-    width: 320px;
+    max-width: 320px;
     height: 230px;
     object-fit: cover;
     top: 35%;
@@ -82,7 +82,7 @@
   }
   .slider .list .item .hot_news_introduction p {
     font-size: 20px;
-    width: 100%;
+    max-width: 100%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -104,7 +104,7 @@
   }
   .slider .list .item .hot_news_introduction button {
     margin-top: -20px;
-    width: 135px;
+    max-width: 135px;
     height: 40px;
     font-size: 16px;
     text-align: center;
@@ -122,7 +122,7 @@
     text-align: center;
   }
   .historical_post button.viewall {
-    width: 115px;
+    max-width: 115px;
     height: 40px;
     font-size: 18px;
     margin-top: 5px;
@@ -144,7 +144,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top: -5px;
-    width: 450px;
+    max-width: 450px;
   }
   .content_title {
     display: none;
@@ -164,10 +164,10 @@
     left: 85%;
   }
   .category_container .title_container {
-    width: 745px;
+    max-width: 745px;
   }
   .category_container .title_container .subcategory {
-    width: 700px;
+    max-width: 700px;
     max-width: 745px;
   }
   .category_container .title_container .subcategory,
@@ -177,10 +177,10 @@
   }
   .categories {
     display: block;
-    width: 750px;
+    max-width: 750px;
   }
   .catefories_left {
-    width: 100%;
+    max-width: 100%;
     top: 50px;
   }
   .it {
@@ -192,7 +192,7 @@
   }
   footer {
     margin-top: 100px;
-    width: 750px;
+    max-width: 750px;
     max-width: 800px;
   }
   .widget_brand {
@@ -212,7 +212,7 @@
   }
   /* Category */
   .all_category {
-    width: 800px;
+    max-width: 800px;
   }
   .all_category header .home_icon,
   .profile .home_icon,
@@ -233,7 +233,7 @@
     left: -5%;
   }
   .list_filter {
-    width: 230px;
+    max-width: 230px;
   }
   .category_filter span,
   .top_reads_filter span,
@@ -256,11 +256,11 @@
   .newest_post_filter li input,
   .top_reads_filter li input {
     left: 8%;
-    width: 15px;
+    max-width: 15px;
     height: 15px;
   }
   .filter_category button {
-    width: 120px;
+    max-width: 120px;
   }
   .sort p {
     font-size: 17px;
@@ -270,14 +270,14 @@
     justify-content: flex-start;
   }
   .article_items {
-    width: 490px;
+    max-width: 490px;
     height: 255px;
   }
   .article_items img {
     height: 190px;
   }
   .content {
-    width: 285px;
+    max-width: 285px;
   }
   .title_acticle {
     display: -webkit-box;
@@ -286,7 +286,7 @@
   }
   /* Profile */
   .user_info img {
-    width: 70px;
+    max-width: 70px;
     height: 70px;
     margin: 0 5px;
   }
@@ -300,29 +300,29 @@
     font-weight: normal;
   }
   .main_content {
-    width: 800px;
+    max-width: 800px;
   }
   .right_profile ul li a {
-    width: 480px;
+    max-width: 480px;
   }
   .right_profile .post {
-    width: 470px;
+    max-width: 470px;
   }
   .article_content img {
-    width: 35%;
+    max-width: 35%;
     height: 220px;
   }
   /* Detail */
   .article {
-    width: 800px;
+    max-width: 800px;
   }
   .left_article {
     margin-right: -10px;
     padding: 15px;
-    width: 60%;
+    max-width: 60%;
   }
   .left_article .title_article {
-    width: 350px;
+    max-width: 350px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -331,14 +331,14 @@
     padding: 0 5px;
   }
   .right_article {
-    width: 50%;
+    max-width: 50%;
   }
   .right_article .show_all_comments {
-    width: 340px;
+    max-width: 340px;
   }
   .right_article .like_comment_number,
   .right_article .author_time_article {
-    width: 340px;
+    max-width: 340px;
   }
   .right_article .author_time_article .author img {
     margin-top: 10px;
@@ -349,7 +349,7 @@
     margin-top: 15px;
   }
   .right_article .write_comment_area {
-    width: 340px;
+    max-width: 340px;
   }
   .similar_topic {
     overflow-x: auto;
@@ -358,11 +358,11 @@
     font-size: 25px;
   }
   .similar_article_list .similar_item {
-    width: 300px;
+    max-width: 300px;
     height: 550px;
   }
   .similar_article_list .similar_item img {
-    width: 90%;
+    max-width: 90%;
     height: 300px;
   }
   .similar_article_list .similar_item .content_items p {
@@ -377,18 +377,18 @@
   }
   /* Login */
   .signin {
-    width: 800px;
+    max-width: 800px;
     height: 630px;
   }
   .bg_content {
-    width: 45%;
+    max-width: 45%;
   }
   .signin_cotainer {
-    width: 55%;
+    max-width: 55%;
     padding: 30px 10px;
   }
   .signin_content {
-    width: 700px;
+    max-width: 700px;
     height: 500px;
     max-width: 750px;
     left: -70px;
@@ -402,19 +402,19 @@
     font-size: 20px;
   }
   .line {
-    width: 285px;
+    max-width: 285px;
   }
   .result .article_items {
-    width: 370px;
+    max-width: 370px;
     height: 250px;
     margin: 30px 0 10px 15px;
     padding: 10px;
   }
   .result .article_items img {
-    width: 90%;
+    max-width: 90%;
   }
   .result .article_items.content {
-    width: 300px;
+    max-width: 300px;
   }
   .description {
     margin: 20px 0;
@@ -425,5 +425,21 @@
   }
   .result .article_items.content p {
     margin: 10px 0;
+  }
+  /* Submission */
+  .announcements {
+    max-width: 790px;
+    left: -1%;
+  }
+  .submission {
+    max-width: 790px;
+  }
+  .first_submission,
+  .re_submission {
+    max-width: 350px;
+  }
+  .recently_submitted {
+    max-width: 790px;
+    padding: 20px 15px;
   }
 }
