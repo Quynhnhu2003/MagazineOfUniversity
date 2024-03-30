@@ -121,15 +121,27 @@
     margin-right: 9px;
     text-align: center;
   }
+  .historical_post {
+    padding: 30px 25px;
+  }
   .historical_post button.viewall {
     max-width: 115px;
     height: 40px;
     font-size: 18px;
     margin-top: 5px;
   }
+  .list_newest_post p.active,
+  .list_top_reads p.active,
+  .list_oldest_post p.active {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
   .list_newest_post,
   .list_top_reads,
   .list_oldest_post {
+    width: 800px;
     display: block;
   }
   .post_item h3,
@@ -145,6 +157,9 @@
     overflow: hidden;
     margin-top: -5px;
     max-width: 450px;
+  }
+  .categories_post .post {
+    margin: 20px 0;
   }
   .content_title {
     display: none;
@@ -194,7 +209,7 @@
     margin-top: 100px;
     max-width: 750px;
     max-width: 800px;
-    margin: 100px 0px 0 0px;
+    margin: 250px 0px 0 0px;
   }
   .widget_brand {
     padding: 10px;
@@ -277,7 +292,7 @@
   .article_items img {
     height: 190px;
   }
-  .content {
+  .article_items.content {
     max-width: 285px;
   }
   .title_acticle {

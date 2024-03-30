@@ -504,6 +504,11 @@ header {
   border-right: 2px solid #000;
   padding-left: 10px;
 }
+.list_newest_post p,
+.list_top_reads p,
+.list_oldest_post p {
+  display: none;
+}
 .list_newest_post {
   display: flex;
   flex-wrap: wrap;
