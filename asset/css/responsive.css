@@ -494,4 +494,54 @@
   .feedback_by h5 {
     width: 100%;
   }
+  /* Add Feedback */
+  .main_content .left_category {
+    flex: 3;
+    width: 190px;
+  }
+  .main_content .left_category ul {
+    width: 190px;
+  }
+  .main_content .left_category ul li a {
+    margin-left: 30px;
+    font-size: 17px;
+  }
+  .right_category {
+    margin-left: 20px;
+    flex: 7;
+  }
+  .main_information {
+    padding: 50px;
+  }
+  .subnavigate {
+    max-width: 650px;
+  }
+  .table-responsive-lg {
+    max-width: 570px;
+  }
+  .table_submission thead tr th,
+  .table_display_deadline thead tr th,
+  .table_feedback thead tr th {
+    font-size: 14px;
+    padding: 0;
+  }
+  .table_feedback tbody tr td {
+    padding: 20px 15px;
+  }
+  .table_submission tbody tr td p,
+  .table_feedback tbody tr td p {
+    font-size: 14px;
+  }
+  .table_submission tbody tr td p.submitted_status,
+  .table_feedback tbody tr td p.reviewed_status {
+    font-size: 14px;
+  }
+  .table_feedback thead tr th:nth-child(2),
+  .table_feedback tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .table_submission tbody tr td.date_time,
+  .table_feedback tbody tr td.date_time {
+    font-size: 15px;
+  }
 }
