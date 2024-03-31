@@ -496,7 +496,7 @@
   }
   /* Add Feedback */
   .main_content .left_category {
-    flex: 3;
+    /* flex: 3; */
     width: 190px;
   }
   .main_content .left_category ul {
@@ -525,8 +525,9 @@
     font-size: 14px;
     padding: 0;
   }
-  .table_feedback tbody tr td {
-    padding: 20px 15px;
+  .table_feedback tbody tr td,
+  .table_submission tbody tr td {
+    padding: 20px 19px;
   }
   .table_submission tbody tr td p,
   .table_feedback tbody tr td p {
@@ -534,7 +535,11 @@
   }
   .table_submission tbody tr td p.submitted_status,
   .table_feedback tbody tr td p.reviewed_status {
-    font-size: 14px;
+    font-size: 13px;
+  }
+  .table_submission tbody tr td p.not_submitted_status,
+  .table_feedback tbody tr td p.unreviewed_status {
+    font-size: 13px;
   }
   .table_feedback thead tr th:nth-child(2),
   .table_feedback tbody tr td:nth-child(2) {
@@ -543,5 +548,31 @@
   .table_submission tbody tr td.date_time,
   .table_feedback tbody tr td.date_time {
     font-size: 15px;
+  }
+  .table_submission tbody tr td.action button,
+  .table_submission tbody tr td.action a {
+    font-size: 20px;
+    padding: 10px;
+  }
+  /* Set deadline */
+  .table_display_deadline tr td p,
+  .table_display_deadline tbody tr td.submission_round {
+    font-size: 15px;
+  }
+  .set-new,
+  .history_deadline,
+  .edit_deadline {
+    padding: 20px 12px;
+  }
+  .table_display_deadline tbody tr td.deadline {
+    font-size: 15px;
+  }
+  .table_display_deadline tbody tr td {
+    padding: 20px 8px;
+  }
+  .table_display_deadline tr td.action button,
+  .table_display_deadline tr td.action a {
+    font-size: 17px;
+    padding: 10px 8px;
   }
 }
