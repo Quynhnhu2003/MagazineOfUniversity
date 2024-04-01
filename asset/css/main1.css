@@ -268,10 +268,10 @@ a:hover {
 .author_article {
   margin-bottom: 25px;
 }
-/* .author_article p {
+.author_article p {
   display: block;
   width: 100%;
-} */
+}
 .author_name,
 .submission_title,
 .date_time_modified,
