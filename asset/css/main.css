@@ -527,6 +527,63 @@ header {
   width: 1400px;
   margin-top: 25px;
 }
+.card_item .content {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title_post {
+  font-weight: 700;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+}
+.card_item {
+  padding: 0 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  height: 470px;
+  border-radius: 16px;
+  position: relative;
+  margin: 40px 65px 30px 0;
+}
+.card_item img {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  transform: translate(20%, 0);
+}
+.card_item .author_date {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2f1a1a;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: right;
+}
+.card_item .author_date span:first-child {
+  color: #7d6545;
+}
+.card_item .read_post {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: none;
+  width: 50px;
+  position: relative;
+  left: 77%;
+  font-size: 18px;
+  background: #87948738;
+  width: 87px;
+  height: 31px;
+}
+
 .post_item {
   display: flex;
   width: 680px;

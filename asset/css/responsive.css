@@ -575,4 +575,18 @@
     font-size: 17px;
     padding: 10px 8px;
   }
+  /* Dashboard */
+  .main_content_dashboard {
+    margin: 10px 10px;
+  }
+  .card_account,
+  .card_semester,
+  .card_faculty,
+  .card_academic_year,
+  .card_category,
+  .card_articles {
+    padding: 15px;
+    width: 240px;
+    margin: 50px 45px 0 0;
+  }
 }
