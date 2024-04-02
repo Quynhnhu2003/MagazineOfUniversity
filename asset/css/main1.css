@@ -370,6 +370,12 @@ a:hover {
   margin: 20px 30px;
   flex-wrap: wrap;
 }
+.chart_container {
+  min-height: 500px;
+  max-height: 800px;
+  margin: 20px 30px;
+  padding: 20px 40px;
+}
 .card_account,
 .card_semester,
 .card_faculty,
