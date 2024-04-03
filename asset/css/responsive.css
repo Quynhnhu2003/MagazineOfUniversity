@@ -527,7 +527,7 @@
   }
   .table_feedback tbody tr td,
   .table_submission tbody tr td {
-    padding: 20px 19px;
+    padding: 20px 10px;
   }
   .table_submission tbody tr td p,
   .table_feedback tbody tr td p {
