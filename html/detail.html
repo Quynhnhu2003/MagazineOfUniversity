@@ -190,7 +190,9 @@
             <div class="like_comment_number">
               <div class="like_number">
                 <div class="like_article">
-                  <i title="Like" class="fa-solid fa-heart like"></i>
+                  <button class="border-0 bg-white" type="button">
+                    <i title="Like" class="fa-solid fa-heart like"></i>
+                  </button>
                   <span>18M</span>
                 </div>
               </div>
@@ -620,6 +622,23 @@
           // Hide "Show More Comments" button if all comments are visible
           if (visibleComments >= comments.length) {
             showMoreButton.style.display = "none";
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var likeButton = document.querySelector(".like_article button");
+
+        likeButton.addEventListener("click", function () {
+          // Toggle class "liked" on the like button
+          likeButton.classList.toggle("liked");
+
+          // Change color of the heart icon based on like status
+          var heartIcon = likeButton.querySelector("i.fa-heart");
+          if (likeButton.classList.contains("liked")) {
+            heartIcon.style.color = "red";
+          } else {
+            heartIcon.style.color = "";
           }
         });
       });

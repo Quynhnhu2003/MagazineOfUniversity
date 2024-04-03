@@ -39,7 +39,18 @@
                 </div>
                 <div class="right">
                     <button><i class="fa-solid fa-bell"></i></button>
-                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    <div class="dropdown">
+                        <a class="btn dropdown_icon dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="submission.html">Submission</a></li>
+                        <li><a class="dropdown-item" href="#">Recently seen</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="hero">
@@ -91,7 +102,14 @@
             <div class="details_submission">
                 <div class="due_to">
                     <p>Due To</p>
-                    <input type="datetime-local" name="" id="" placeholder="DD/MM/YY, TIME">
+                    <div class="due_to_content">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        DD/MM/YY, HH:MM
+                    </div>
+                </div>
+                <div class="submission_title">
+                    <p>Title</p>
+                    <input type="text" name="" id="" placeholder="Submission's Title">
                 </div>
                 <div class="submission_status">
                     <p>Submission Status</p>
@@ -100,9 +118,15 @@
                         The article is pending submission, but you still have the chance to submit it.
                     </p>
                 </div>
-                <div class="attachment">
-                    <p>Attachment</p>
-                    <input type="file" name="" id="">
+                <div class="file_submisson d-flex">
+                    <div class="attachment">
+                        <p>Attachment</p>
+                        <input type="file" name="" id="">
+                    </div>
+                    <div class="attachment">
+                        <p>Photo</p>
+                        <input type="file" name="" id="">
+                    </div>
                 </div>
                 <div class="select_topic">
                     <p>Select one topic:</p>
@@ -146,8 +170,10 @@
                 <div class="author">
                     <p>Author</p>
                     <div class="author_input">
-                        <input type="text" name="" id="" placeholder="Student’s Name/Email’s Student">
-                        <i class="fa-solid fa-user"></i>
+                        <div class="author_content">
+                            <i class="fa-solid fa-user"></i>
+                            Student's Name/Email's Student
+                        </div>
                     </div>
                 </div>
                 <div class="submission_comment">

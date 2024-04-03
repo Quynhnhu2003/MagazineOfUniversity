@@ -1,5 +1,5 @@
 /* Tablet */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 740px) and (max-width: 1024px) {
   .container {
     max-width: 800px;
   }
@@ -39,6 +39,8 @@
   .details .right button,
   .search_page header .right button {
     margin-right: 10px !important;
+  }
+  .right .drop_down a {
   }
   .hero {
     background: #748873;
@@ -473,19 +475,17 @@
     position: relative;
     left: 5%;
   }
-  .due_to input,
-  .attachment input {
-    width: 60%;
+  .due_to input {
+    width: 100%;
+  }
+  .attachment input,
+  .photo input {
+    width: 90%;
   }
   .submission_status p:last-child {
-    width: 60%;
+    width: 100%;
     height: 90px;
     padding: 15px 0;
-  }
-  .author_input input,
-  .submission_comment input,
-  .term_conditions .term_and_conditions {
-    width: 95%;
   }
   .feedback_submission {
     max-width: 800px;
@@ -592,7 +592,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
   body {
     max-width: 600px;
   }

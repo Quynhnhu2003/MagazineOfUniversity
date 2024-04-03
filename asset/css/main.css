@@ -1538,10 +1538,6 @@ a.title_submenu {
 .comment_article i {
   padding-top: 5px;
 }
-.like.liked {
-  color: red;
-  transition: color 0.2s ease-in-out;
-}
 .btn_download {
   outline: none;
   background: none;
@@ -1567,12 +1563,40 @@ a.title_submenu {
   display: flex;
   margin-bottom: -8px;
 }
-.right_article .show_all_comments .user_info img {
-  width: 20px;
-  height: 20px;
+.profile-pic {
   border: 1px solid #000;
   border-radius: 50%;
-  margin-right: 5px;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  vertical-align: middle;
+  text-align: center;
+  color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.profile-pic:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.profile-pic span {
+  font-size: 12px;
+}
+.profile-pic i {
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+form input[type="file"] {
+  display: none;
+  cursor: pointer;
 }
 .right_article .show_all_comments .user_info p {
   font-size: 16px;
@@ -1940,42 +1964,62 @@ a.title_submenu {
   width: 1275px;
 }
 .due_to,
-.submission_status {
-  width: 1000px;
+.submission_status,
+.attachment,
+.photo {
+  width: 100%;
   height: 100%;
   margin-bottom: 30px;
 }
 .due_to p,
 .submission_status p,
 .attachment p,
+.photo p,
 .select_topic p,
 .author p,
 .submission_comment p,
-.term_conditions p {
+.term_conditions p,
+.submission_title p {
   font-size: 20px;
   font-weight: 600;
 }
-.due_to input,
 .attachment input,
-.author_input input {
-  /* border: none; */
-  border-radius: 5px;
-  background: none;
-  width: 1075px;
-  height: 40px;
+.photo input {
+  width: 50%;
   padding: 5px;
   font-size: 18px;
   background-color: #fff;
 }
 .submission_status p:last-child {
-  border: 1px solid #000;
-  width: 1075px;
+  border: 2px solid #000;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   padding: 5px;
   color: #ff8730;
   text-align: center;
   background-color: #fff;
+}
+.author_content,
+.due_to_content {
+  border: 2px solid #000;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+.author_content i,
+.due_to_content i {
+  height: 26px;
+  margin-left: 5px;
+  color: #000;
+  display: flex;
+  float: left;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .submission_status p:last-child i {
   margin-right: 10px;
@@ -1985,17 +2029,17 @@ a.title_submenu {
 }
 .list_topic {
   display: flex;
-  max-width: 600px;
+  max-width: 100%;
   margin-left: 20px;
 }
 .select_topic ol.column_list {
   line-height: 45px;
-  column-count: 2;
-  column-gap: 100px;
+  column-count: 8;
+  column-gap: 75px;
   padding: 0;
 }
 .select_topic ol li input {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .author_input {
   margin-bottom: 20px;
@@ -2003,15 +2047,11 @@ a.title_submenu {
 .author_input input {
   padding: 20px 45px;
 }
-.author_input i {
-  position: relative;
-  top: 0;
-  right: 90%;
-}
-.submission_comment input {
+.submission_comment input,
+.submission_title input {
   border-radius: 5px;
   background: none;
-  width: 1075px;
+  width: 100%;
   height: 40px;
   padding: 0 20px;
   font-size: 18px;
@@ -2019,7 +2059,7 @@ a.title_submenu {
   background-color: #fff;
 }
 .term_conditions .term_and_conditions {
-  width: 1075px;
+  width: 100%;
   padding: 15px;
   border: 1px solid #000;
   max-height: 300px;
@@ -2064,7 +2104,7 @@ a.title_submenu {
   font-weight: 600;
 }
 .comment_content {
-  width: 1075px;
+  width: 100%;
   padding: 15px;
   border: 1px solid #000;
   max-height: 300px;
@@ -2078,7 +2118,7 @@ a.title_submenu {
   margin: 30px 0;
 }
 .feedback_by h5 {
-  width: 1075px;
+  width: 100%;
   height: 50px;
   padding: 10px;
   border: 1px solid #000;
