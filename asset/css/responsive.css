@@ -54,8 +54,6 @@
   .search_page header .right button {
     margin-right: 10px !important;
   }
-  .right .drop_down a {
-  }
   .hero {
     background: #748873;
     max-width: 100%;
@@ -620,19 +618,46 @@
   .details header {
     max-width: 100%;
   }
-  .hero {
+  .header_logo,
+  .all_category header,
+  .profile header,
+  .details header {
     width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
   .hero nav ul {
     width: 100%;
+  }
+  .hero nav ul:first-child {
+    display: none;
+  }
+  .hero nav ul.mobile {
+    display: block;
+  }
+  .hero nav ul li a.category {
+    font-size: 12px;
+    width: 150px;
+    margin-left: 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .left .home_icon,
   .container_search {
     width: 30px;
     height: 30px;
   }
-  .left .home_icon {
+  .left .home_icon,
+  .all_category header .home_icon,
+  .profile .home_icon,
+  .details .home_icon,
+  .search_page .home_icon {
     margin-right: 10px;
+  }
+  .left {
+    margin-left: -90px;
   }
   .left .home_icon i {
     font-size: 15px;
@@ -642,11 +667,19 @@
   .container_search .icon_search {
     top: 20%;
   }
-  .container_search.active {
-    max-width: 50%;
+  .container_search.active,
+  .all_category.container_search.active,
+  .profile .container_search.active,
+  .search_page header .container_search.active {
+    max-width: 100%;
+    width: 110px;
+  }
+  .container_search .input_search {
+    width: 100%;
+    top: 3px;
   }
   .container_search .input_search input {
-    width: 50%;
+    width: 100%;
     right: 33%;
     top: -20%;
   }
@@ -658,6 +691,10 @@
     padding-top: 25px;
     text-align: center;
     font-size: 20px;
+    width: 100%;
+  }
+  .right button {
+    margin-right: 0;
   }
   .slider {
     width: 100%;
@@ -817,5 +854,30 @@
   }
   .contact_footer {
     padding: 0 5px 20px 30px;
+  }
+  .contact_footer .address p,
+  .contact_footer .email p {
+    font-size: 13px;
+  }
+  /* Profile */
+  .main_content {
+    width: 100%;
+  }
+  .profile_content {
+    width: 100%;
+    display: block;
+  }
+  .left_profile,
+  .right_profile {
+    margin-right: 20px;
+  }
+  .right_profile ul li a {
+    width: 100%;
+  }
+  .biography {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }
