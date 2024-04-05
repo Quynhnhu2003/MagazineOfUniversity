@@ -504,11 +504,6 @@ header {
   border-right: 2px solid #000;
   padding-left: 10px;
 }
-.list_newest_post p,
-.list_top_reads p,
-.list_oldest_post p {
-  display: none;
-}
 .list_newest_post {
   display: flex;
   flex-wrap: wrap;
@@ -526,6 +521,11 @@ header {
   flex-wrap: wrap;
   width: 1400px;
   margin-top: 25px;
+}
+.title_list {
+  width: 680px;
+  height: 40px;
+  display: none;
 }
 .card_item .content {
   padding: 8px;
@@ -839,7 +839,7 @@ footer {
   padding: 20px;
   margin: 100px 20px 0 40px;
   width: 1600px;
-  height: 850px;
+  height: 100%;
   max-width: 1440px;
   max-height: 900px;
   background: #dde9d52e;
@@ -903,7 +903,7 @@ footer {
   font-weight: bold;
 }
 .contact_footer {
-  padding: 30px 70px;
+  padding: 0 70px 30px 70px;
 }
 .contact_footer .address,
 .contact_footer .email {
