@@ -114,15 +114,19 @@
         <div class="right_category">
           <nav class="subnavigate">
             <ul>
-              <li class="active">Manage Academic Year</li>
-              <li>Create New</li>
+              <li class="active">
+                <a href="academicYear.html">Manage Academic Year</a>
+              </li>
+              <li>
+                <a href="createAcademicYear.html"> Create New </a>
+              </li>
             </ul>
             <button>
               <i class="fa-solid fa-filter"></i>
             </button>
           </nav>
 
-          <div id="manage_academic" class="content_table active">
+          <div id="manage_academic">
             <div class="table-responsive-lg">
               <table class="table table-hover table_submission">
                 <thead>
@@ -302,52 +306,6 @@
               <i class="fa-solid fa-angle-right"></i>
             </div>
           </div>
-          <div id="create_new" class="content_table">
-            <div class="main_information">
-              <h3>Create New Academic Year</h3>
-              <div class="author_article ps-4">
-                  <p class="d-block p-2 fs-5 text fw-bold">
-                    Academic Year:<br>
-                      <div class="author_name bg-white p-3 mb-2 rounded">
-                          <input type="text" 
-                          class="form-control border border-white" 
-                          placeholder="Academic Year" 
-                          aria-describedby="addon-wrapping"> 
-                      </div>
-                  </p>
-              </div>
-              <div class="last_modified ps-4">
-                  <p class="d-block p-2 fs-5 text fw-bold">
-                    Start Date: <br>
-                      <div class="date_time_modified bg-white p-3 mb-2 rounded">
-                          <input type="datetime" 
-                          class="form-control border border-white" 
-                          placeholder="MM/DD/YY" 
-                          aria-describedby="addon-wrapping">
-                      </div>
-                  </p>
-              </div>
-              <div class="feedback_content ps-4">
-                  <p class="d-block p-2 fs-5 text fw-bold">
-                    Closure Date: <br>
-                      <div class="content_container bg-white p-3 mb-2 rounded">
-                          <input type="text" 
-                          class="form-control text-break border border-white" 
-                          placeholder="Closure Date" 
-                          aria-describedby="addon-wrapping">
-                      </div>
-                  </p>
-              </div>
-              <div class="btn_group ps-4 mt-5">
-                  <button type="button" class="btn btn-outline-success btn-lg me-3">
-                      <i class="fa-regular fa-floppy-disk"></i> Save
-                  </button>
-                  <button type="button" class="btn btn-outline-warning btn-lg me-3">
-                      <i class="fa-solid fa-arrow-rotate-left"></i> Reset
-                  </button>
-              </div>
-          </div>
-          </div>
         </div>
       </section>
 
@@ -415,22 +373,5 @@
     <!-- Main -->
     <script src="/asset/js/main.js"></script>
     <script src="/asset/js/more.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navItems = document.querySelectorAll("nav ul li");
-        const contentItems = document.querySelectorAll(".content_table");
-
-        navItems.forEach((item, index) => {
-          item.addEventListener("click", function () {
-            navItems.forEach((navItem) => navItem.classList.remove("active"));
-            contentItems.forEach((contentItem) =>
-              contentItem.classList.remove("active")
-            );
-            item.classList.add("active");
-            contentItems[index].classList.add("active");
-          });
-        });
-      });
-    </script>
   </body>
 </html>
