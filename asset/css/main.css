@@ -63,6 +63,25 @@ header {
   background: #dde9d5;
   color: #363f30;
 }
+.left .search_mobile,
+.left .category_mobile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.8s;
+  overflow: hidden;
+  /* background: #dde9d5; */
+  top: 25%;
+  display: none;
+}
+.left .search_mobile i,
+.left .category_mobile i {
+  position: absolute;
+  font-size: 17px;
+  top: 30%;
+  right: 25%;
+}
 .container_search {
   width: 40px;
   height: 40px;
@@ -288,6 +307,9 @@ header {
   color: black;
   float: right;
   margin: 10px 35px;
+}
+.mobile {
+  display: none;
 }
 
 /* slider */
