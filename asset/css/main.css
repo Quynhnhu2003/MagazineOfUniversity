@@ -1228,6 +1228,7 @@ footer {
 }
 .left_category {
   flex: 1;
+  position: relative;
 }
 .left_category .title_left {
   /* padding: 10px 0; */
@@ -1239,13 +1240,55 @@ footer {
   font-weight: 400;
   letter-spacing: 5%;
 }
-.left_category .title_left i {
+.left_category .title_left i.filter {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 10%;
+  text-align: center;
+  padding-top: 12px;
+}
+.filter_mobile i {
   width: 30px;
   height: 30px;
   position: relative;
   left: -4%;
   text-align: center;
   padding-top: 12px;
+  display: none;
+}
+.hideFilter {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  float: right;
+  text-align: center;
+  display: none;
+}
+.hideFilter i {
+  font-size: 25px;
+  margin: 10px 0;
+}
+.filter_sidebar {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 450%;
+  height: 96%;
+  margin-right: 20px;
+  box-shadow: 0 4px 4px 0 #304d44;
+}
+.filter_sidebar button {
+  outline: none;
+  border: none;
+  background: none;
+  background-color: #dde9d5;
+  width: 157px;
+  height: 48px;
+  border-radius: 6px;
+  position: relative;
+  left: 5%;
+  transform: translateY(20%);
 }
 .list_filter {
   width: 280px;
@@ -1357,6 +1400,7 @@ a.title_submenu {
 .right_category {
   flex: 9;
   margin-left: 10px;
+  position: relative;
 }
 .sort {
   display: flex;
@@ -1585,6 +1629,14 @@ a.title_submenu {
   width: 40%;
   display: flex;
   margin-bottom: -8px;
+}
+.user_info img {
+  width: 12%;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
 .profile-pic {
   border: 1px solid #000;

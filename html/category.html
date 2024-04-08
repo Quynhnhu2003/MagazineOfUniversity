@@ -150,7 +150,10 @@
           <div class="left_category">
             <div class="title_left">
               <p>FILTERED BY:</p>
-              <i class="fa-solid fa-filter"></i>
+              <i class="fa-solid fa-filter filter"></i>
+              <a href="#" class="filter_mobile" onclick="showfiletr()">
+                <i class="fa-solid fa-filter"></i>
+              </a>
             </div>
             <div class="list_filter">
               <div class="filter_category">
@@ -297,6 +300,153 @@
                 </ul>
                 <button type="button">Clear All</button>
               </div>
+            </div>
+            <div class="filter_sidebar">
+              <a class="hideFilter" href="#" onclick="Hidefilter()">
+                <i class="fa-solid fa-square-xmark"></i>
+              </a>
+              <ul class="category_filter">
+                <span>CATEGORY</span>
+                <li>
+                  <a
+                    class="title_submenu"
+                    data-submenu=".sub1_show"
+                    data-icon=".first"
+                  >
+                    Faculty 1
+                    <i class="fa-solid fa-chevron-down first"></i>
+                  </a>
+                  <ul class="sub sub1_show">
+                    <li class="sub_li">
+                      <p>Data Communication and Computer Network</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 1</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 1</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 1</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 1</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>All</p>
+                      <input type="checkbox" name="" id="" />
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="title_submenu"
+                    data-submenu=".sub2_show"
+                    data-icon=".second"
+                  >
+                    Faculty 2
+                    <i class="fa-solid fa-chevron-down second"></i>
+                  </a>
+                  <ul class="sub sub2_show">
+                    <li class="sub_li">
+                      <p>Sub1 faculty 2</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 2</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 2</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 2</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 2</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>All</p>
+                      <input type="checkbox" name="" id="" />
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="title_submenu"
+                    data-submenu=".sub3_show"
+                    data-icon=".third"
+                  >
+                    Faculty 3
+                    <i class="fa-solid fa-chevron-down third"></i>
+                  </a>
+                  <ul class="sub sub3_show">
+                    <li class="sub_li">
+                      <p>Sub1 faculty 3</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 3</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 3</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 3</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>Sub1 faculty 3</p>
+                      <input type="checkbox" />
+                    </li>
+                    <li class="sub_li">
+                      <p>All</p>
+                      <input type="checkbox" name="" id="" />
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="newest_post_filter">
+                <span>NEWEST POST</span>
+                <li>
+                  <p>Today</p>
+                  <input type="checkbox" name="" id="" />
+                </li>
+                <li>
+                  <p>Weekly</p>
+                  <input type="checkbox" name="" id="" />
+                </li>
+                <li>
+                  <p>Monthly</p>
+                  <input type="checkbox" name="" id="" />
+                </li>
+              </ul>
+              <ul class="top_reads_filter">
+                <span>TOP READS</span>
+                <li>
+                  <p>Today</p>
+                  <input type="checkbox" name="" id="" />
+                </li>
+                <li>
+                  <p>Weekly</p>
+                  <input type="checkbox" name="" id="" />
+                </li>
+                <li>
+                  <p>Monthly</p>
+                  <input type="checkbox" name="" id="" />
+                </li>
+              </ul>
+              <button type="button">Clear All</button>
             </div>
           </div>
           <div class="right_category">
@@ -554,6 +704,47 @@
         $(submenu).toggleClass("show");
         $(icon).toggleClass("rotate");
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterMobileBtn = document.querySelector(".filter_mobile");
+        const hideFilterBtn = document.querySelector(".hideFilter");
+        const filterSidebar = document.querySelector(".filter_sidebar");
+
+        if (filterMobileBtn && hideFilterBtn && filterSidebar) {
+          filterMobileBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            showSidebar(); // Hiển thị filter_sidebar khi nhấp vào filter_mobile
+          });
+
+          hideFilterBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            hideSidebar(); // Ẩn filter_sidebar khi nhấp vào hideFilter
+          });
+        }
+
+        // Ẩn filter_sidebar khi trang được tải
+        filterSidebar.style.display = "none";
+      });
+
+      function showSidebar() {
+        const filterSidebar = document.querySelector(".filter_sidebar");
+        if (filterSidebar) {
+          filterSidebar.style.display = "block";
+
+          // Hiển thị nút hideFilter
+          const hideFilterBtn = document.querySelector(".hideFilter");
+          if (hideFilterBtn) {
+            hideFilterBtn.classList.add("show");
+          }
+        }
+      }
+
+      function Hidefilter() {
+        const filterSidebar = document.querySelector(".filter_sidebar");
+        if (filterSidebar) {
+          filterSidebar.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>
