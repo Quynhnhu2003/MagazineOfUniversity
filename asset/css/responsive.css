@@ -900,6 +900,10 @@
   .contact_footer .email p {
     font-size: 13px;
   }
+  .contact_footer .address,
+  .contact_footer .email {
+    width: 100%;
+  }
   /* Profile */
   .main_content {
     width: 100%;
@@ -1247,5 +1251,88 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  /* Add Feadback */
+  .main_content .left_category {
+    display: none;
+  }
+  .top_page {
+    width: 100%;
+  }
+  .top_page_nav {
+    width: 70%;
+  }
+  .top_page_nav {
+    display: none !important;
+  }
+  .main_information {
+    padding: 40px 10px;
+  }
+  .btn_group a:last-child {
+    margin-top: 20px;
+  }
+  .top_page .sidebar_mobile {
+    display: block;
+  }
+  .submission_comment input,
+  .submission_title input {
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  .right_category {
+    margin-left: 0;
+  }
+  /* All Submission */
+  .allsubmission {
+    width: 100%;
+  }
+  .subnavigate {
+    width: 100%;
+  }
+  .subnavigate ul,
+  .sub_nav ul {
+    width: 100%;
+  }
+  .subnavigate ul li,
+  .sub_nav ul li {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .subnavigate ul li.active,
+  .sub_nav ul li.active {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .table_submission,
+  .table_display_deadline,
+  .table_feedback {
+    overflow-x: auto;
+  }
+  .table_submission thead tr th,
+  .table_display_deadline thead tr th,
+  .table_feedback thead tr th {
+    font-size: 15px;
+  }
+  .table_submission tbody tr td {
+    padding: 20px 25px;
+  }
+  .table_submission tbody tr td p,
+  .table_feedback tbody tr td p,
+  .table_submission tbody tr td.date_time,
+  .table_feedback tbody tr td.date_time {
+    font-size: 15px;
+  }
+  /* Set Deadline */
+  .set-new,
+  .history_deadline,
+  .edit_deadline {
+    padding: 0;
+    height: 100%;
+  }
+  /* Show more Info Deadline */
+  .main_information h3 {
+    font-size: 20px;
   }
 }

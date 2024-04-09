@@ -78,12 +78,38 @@
                 </ul>
             </div>
             <div class="right_category">
-                <div class="top_page">
-                    <p>HOME</p> <span></span> 
-                    <p>DASHBOARD</p> <span></span> 
-                    <p>REVIEWED SUBMISSION</p> <span></span>
-                    <p>VIEW DETAIL</p>
-                </div>
+                <div class="top_page container">
+                    <div class="top_page_nav d-flex">
+                      <p>HOME</p>
+                      <span></span>
+                      <p>All Submission</p>
+                    </div>
+                    <a class="sidebar_mobile" href="#" onclick="showSidebar()">
+                      <i class="fa-solid fa-bars"></i>
+                    </a>
+                  </div>
+                  <div class="menu_sidebar">
+                    <a class="hideSidebar" href="#" onclick="hideSidebar()">
+                      <i class="fa-solid fa-xmark"></i>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="#">Dashboard</a>
+                      </li>
+                      <li>
+                        <a href="allSubmission.html">All Submission</a>
+                      </li>
+                      <li>
+                        <a href="setDaedline.html">Set Deadline</a>
+                      </li>
+                      <li class="active_link">
+                        <a href="feedbackProvider.html">Feedback Provided</a>
+                      </li>
+                      <li>
+                        <a href="#">Publish</a>
+                      </li>
+                    </ul>
+                  </div>
                 <div class="main_information">
                     <h3>Reviewed Submission Detail</h3>
                     <div class="author_article ps-4">
@@ -136,7 +162,7 @@
                         <a href="feedbackProvider.html" class="btn btn-outline-secondary btn-lg me-3" type="button">
                             <i class="fa-solid fa-arrow-left"></i>
                         </a>
-                        <a href="editDeadline.html" class="btn btn-outline-warning btn-lg me-3" type="button">
+                        <a href="editDeadline.html" class="btn btn-outline-warning btn-lg me-3 mt-0" type="button">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </a>
                     </div>
@@ -202,5 +228,47 @@
     <!-- Main -->
     <script src="/asset/js/main.js"></script>
     <script src="/asset/js/more.js"></script>
+    <script>
+                document.addEventListener("DOMContentLoaded", function () {
+        const filterMobileBtn = document.querySelector(".sidebar_mobile");
+        const hideFilterBtn = document.querySelector(".hideSidebar");
+        const menuSidebar = document.querySelector(".menu_sidebar");
+
+        if (filterMobileBtn && hideFilterBtn && menuSidebar) {
+          filterMobileBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            showSidebar();
+          });
+
+          hideFilterBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            hideSidebar();
+          });
+        }
+
+        // Ẩn menu_sidebar khi trang được tải
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      });
+
+      function showSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "block";
+          const hideFilterBtn = document.querySelector(".hideSidebar");
+          if (hideFilterBtn) {
+            hideFilterBtn.classList.add("show");
+          }
+        }
+      }
+
+      function hideSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      }
+    </script>
 </body>
 </html>

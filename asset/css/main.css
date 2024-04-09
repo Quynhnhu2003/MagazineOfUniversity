@@ -1199,6 +1199,7 @@ footer {
   padding: 30px 12px;
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 .top_page p {
   font-size: 18px;
@@ -1207,9 +1208,12 @@ footer {
   text-transform: uppercase;
   padding-right: 15px;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .top_page p:last-child {
-  width: 20%;
+  width: 50%;
   color: #000;
   text-decoration: underline;
   white-space: nowrap;
