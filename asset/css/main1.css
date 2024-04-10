@@ -268,9 +268,6 @@ a:hover {
   font-size: 20px;
   padding: 0 5px;
 }
-.author_article {
-  margin-bottom: 25px;
-}
 .author_article p {
   display: block;
   width: 100%;
@@ -280,7 +277,8 @@ a:hover {
 .date_time_modified,
 .status,
 .content_container,
-.date_time_feedback {
+.date_time_feedback,
+.feedback {
   max-width: 500px;
 }
 .content_container {
@@ -568,4 +566,17 @@ input:disabled {
 }
 .menu_sidebar ul li.active_link {
   padding: 5px 20px;
+}
+/* Thay đổi kiểu chữ và cỡ chữ của nội dung */
+#docxContent {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  border-right: 1px solid #000;
+  padding-right: 10px;
+}
+.input-group {
+  max-height: calc(100vh - 200px);
+  min-height: 100px;
 }
