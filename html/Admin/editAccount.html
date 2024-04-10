@@ -112,6 +112,39 @@
           </ul>
         </div>
         <div class="right_category">
+          <div class="top_page">
+            <a class="sidebar_mobile" href="#" onclick="showSidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="menu_sidebar">
+              <a class="hideSidebar" href="#" onclick="hideSidebar()">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="academicYear.html">Academic Year</a>
+                </li>
+                <li>
+                  <a href="semester.html">Semester</a>
+                </li>
+                <li>
+                  <a href="faculty.html">Faculty</a>
+                </li>
+                <li class="active_link">
+                  <a href="account.html">Accounts</a>
+                </li>
+                <li>
+                  <a href="categories.html">Categories</a>
+                </li>
+                <li>
+                  <a href="#">Articles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         <div id="edit_faculty">
             <div class="main_information">
               <h3>Edit Account</h3>
@@ -151,12 +184,11 @@
             <div class="author_article ps-4">
                 <p class="d-block p-2 fs-5 text fw-bold">
                   Password:<br>
-                    <div class="author_name bg-white p-3 mb-2 rounded">
-                        <input type="password" 
-                        class="form-control border border-white" 
-                        placeholder="Password" 
-                        aria-describedby="addon-wrapping"> 
-                    </div>
+                  <div class="status bg-white p-3 mb-2 rounded d-flex">
+                    <input class="border border-white w-100 p-2" type="password" value="123456789" id="myInput">
+                    <input type="checkbox" class="w-auto" onclick="myFunction()">
+                    <span class="mt-2">Show</span>
+                  </div>
                 </p>
             </div>
             <div class="status_publish ps-4">
@@ -255,5 +287,56 @@
     <!-- Main -->
     <script src="/asset/js/main.js"></script>
     <script src="/asset/js/more.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterMobileBtn = document.querySelector(".sidebar_mobile");
+        const hideFilterBtn = document.querySelector(".hideSidebar");
+        const menuSidebar = document.querySelector(".menu_sidebar");
+
+        if (filterMobileBtn && hideFilterBtn && menuSidebar) {
+          filterMobileBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            showSidebar();
+          });
+
+          hideFilterBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            hideSidebar();
+          });
+        }
+
+        // Ẩn menu_sidebar khi trang được tải
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      });
+
+      function showSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "block";
+          const hideFilterBtn = document.querySelector(".hideSidebar");
+          if (hideFilterBtn) {
+            hideFilterBtn.classList.add("show");
+          }
+        }
+      }
+
+      function hideSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      }
+
+      function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
   </body>
 </html>

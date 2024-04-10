@@ -874,7 +874,7 @@ footer {
   padding: 0 30px;
 }
 .widget_brand {
-  padding: 40px;
+  padding: 25px;
 }
 .animated_brand {
   display: flex;
@@ -926,7 +926,7 @@ footer {
   font-weight: bold;
 }
 .contact_footer {
-  padding: 0 70px 30px 70px;
+  padding: 30px 70px;
 }
 .contact_footer .address,
 .contact_footer .email {
@@ -1733,8 +1733,8 @@ form input[type="file"] {
 }
 .line-5 {
   margin-top: 20px;
-  width: 1165px;
-  float: right;
+  width: 100%;
+  /* float: right; */
   height: 5px;
   background: linear-gradient(
     to bottom,
