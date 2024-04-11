@@ -54,13 +54,18 @@
                 <i class="clear fa fa-times"></i>
               </div>
             </div>
+            <a class="search_mobile" href="../search.html">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a class="category_mobile" href="../category.html">
+              <i class="fa-solid fa-icons"></i>
+            </a>
           </div>
           <div class="brand_name">
             <a href="../index.html">Magazine of University</a>
           </div>
           <div class="right">
             <button><i class="fa-solid fa-bell"></i></button>
-            <!-- <a href="login.html"><i class="fa-solid fa-user"></i></a> -->
             <div class="dropdown">
               <a
                 class="btn dropdown_icon dropdown-toggle"
@@ -74,11 +79,12 @@
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li>
-                  <a class="dropdown-item" href="submission.html">Dashboard</a>
+                  <a class="dropdown-item" href="profile.html">Profile</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Recently seen</a></li>
+                <li>
+                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                </li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
             </div>
@@ -112,6 +118,40 @@
           </ul>
         </div>
         <div class="right_category">
+          <div class="top_page">
+            <a class="sidebar_mobile" href="#" onclick="showSidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="menu_sidebar">
+              <a class="hideSidebar" href="#" onclick="hideSidebar()">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="academicYear.html">Academic Year</a>
+                </li>
+                <li>
+                  <a href="semester.html">Semester</a>
+                </li>
+                <li class="active_link">
+                  <a href="faculty.html">Faculty</a>
+                </li>
+                <li>
+                  <a href="account.html">Accounts</a>
+                </li>
+                <li>
+                  <a href="categories.html">Categories</a>
+                </li>
+                <li>
+                  <a href="#">Articles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <nav class="subnavigate">
               <ul>
                 <li>
@@ -215,5 +255,47 @@
     <!-- Main -->
     <script src="/asset/js/main.js"></script>
     <script src="/asset/js/more.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterMobileBtn = document.querySelector(".sidebar_mobile");
+        const hideFilterBtn = document.querySelector(".hideSidebar");
+        const menuSidebar = document.querySelector(".menu_sidebar");
+
+        if (filterMobileBtn && hideFilterBtn && menuSidebar) {
+          filterMobileBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            showSidebar();
+          });
+
+          hideFilterBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            hideSidebar();
+          });
+        }
+
+        // Ẩn menu_sidebar khi trang được tải
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      });
+
+      function showSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "block";
+          const hideFilterBtn = document.querySelector(".hideSidebar");
+          if (hideFilterBtn) {
+            hideFilterBtn.classList.add("show");
+          }
+        }
+      }
+
+      function hideSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -112,6 +112,40 @@
           </ul>
         </div>
         <div class="right_category">
+          <div class="top_page">
+            <a class="sidebar_mobile" href="#" onclick="showSidebar()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="menu_sidebar">
+              <a class="hideSidebar" href="#" onclick="hideSidebar()">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="academicYear.html">Academic Year</a>
+                </li>
+                <li class="active_link">
+                  <a href="semester.html">Semester</a>
+                </li>
+                <li>
+                  <a href="faculty.html">Faculty</a>
+                </li>
+                <li>
+                  <a href="account.html">Accounts</a>
+                </li>
+                <li>
+                  <a href="categories.html">Categories</a>
+                </li>
+                <li>
+                  <a href="#">Articles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div class="edit_semester">
             <div class="main_information">
               <h3>Edit Details</h3>
@@ -208,7 +242,7 @@
                 <a
                     href="semester.html"
                     type="button"
-                    class="btn btn-outline-secondary btn-lg"
+                    class="btn btn-outline-secondary btn-lg mt-0"
                 >
                     <i class="fa-solid fa-arrow-left"></i> Back to semester
                 </a>
@@ -282,5 +316,47 @@
     <!-- Main -->
     <script src="/asset/js/main.js"></script>
     <script src="/asset/js/more.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterMobileBtn = document.querySelector(".sidebar_mobile");
+        const hideFilterBtn = document.querySelector(".hideSidebar");
+        const menuSidebar = document.querySelector(".menu_sidebar");
+
+        if (filterMobileBtn && hideFilterBtn && menuSidebar) {
+          filterMobileBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            showSidebar();
+          });
+
+          hideFilterBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            hideSidebar();
+          });
+        }
+
+        // Ẩn menu_sidebar khi trang được tải
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      });
+
+      function showSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "block";
+          const hideFilterBtn = document.querySelector(".hideSidebar");
+          if (hideFilterBtn) {
+            hideFilterBtn.classList.add("show");
+          }
+        }
+      }
+
+      function hideSidebar() {
+        const menuSidebar = document.querySelector(".menu_sidebar");
+        if (menuSidebar) {
+          menuSidebar.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

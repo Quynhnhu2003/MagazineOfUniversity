@@ -38,7 +38,7 @@
     <title>Magazine of University</title>
   </head>
   <body>
-    <section class="allsubmission">
+    <section class="setdeadline">
       <header>
         <section class="header_logo container">
           <div class="left">
@@ -91,10 +91,11 @@
           </div>
         </section>
       </header>
-      <section class="main_content">
+
+      <section class="main_content container">
         <div class="left_category">
           <ul>
-            <li>
+            <li class="active_link">
               <a href="dashboard.html">Dashboard</a>
             </li>
             <li>
@@ -106,7 +107,7 @@
             <li>
               <a href="faculty.html">Faculty</a>
             </li>
-            <li class="active_link">
+            <li>
               <a href="account.html">Accounts</a>
             </li>
             <li>
@@ -127,7 +128,7 @@
                 <i class="fa-solid fa-xmark"></i>
               </a>
               <ul>
-                <li>
+                <li class="active_link">
                   <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li>
@@ -139,7 +140,7 @@
                 <li>
                   <a href="faculty.html">Faculty</a>
                 </li>
-                <li class="active_link">
+                <li>
                   <a href="account.html">Accounts</a>
                 </li>
                 <li>
@@ -151,85 +152,202 @@
               </ul>
             </div>
           </div>
-          <nav class="subnavigate">
-            <ul>
-              <li>
-                <a href="account.html">List User</a></li>
-              <li class="active"><a href="createAccount.html">Create new</a></li>
-            </ul>
-          </nav>
-
-          <div id="maketing_coodinator">
-            <div class="main_information">
-                <h3>Create New Account</h3>
-                <div class="author_article ps-4">
-                    <p class="d-block p-2 fs-5 text fw-bold">
-                      ID:<br>
-                        <div class="author_name bg-white p-3 mb-2 rounded">
-                            <input type="text" 
-                            class="form-control border border-white" 
-                            placeholder="ID" 
-                            aria-describedby="addon-wrapping"> 
-                        </div>
-                    </p>
+          <div class="left_profile">
+            <div class="user_info d-flex p-2">
+              <form
+                action="upload.php"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <label for="fileToUpload">
+                  <div
+                    class="profile-pic"
+                    style="
+                      background-image: url('../../asset/img/user_ava.jpg');
+                    "
+                  >
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <span>Change Image</span>
+                  </div>
+                </label>
+                <input type="File" name="fileToUpload" id="fileToUpload" />
+              </form>
+              <div class="infor">
+                <h4>Administrator's name</h4>
+                <p>Administrator ID: <span>AD001234</span></p>
+                <p>Year of participation: <span>2020</span></p>
+              </div>
+            </div>
+            <div
+              class="biography_coordinator border border-secondary rounded p-4"
+            >
+              <h3 class="text-uppercase mb-5">biography</h3>
+              <div class="fullname_user">
+                <p class="fs-5 text fw-bold">Fullname</p>
+                <div
+                  class="p-2 mb-4 bg-white text-dark border border-secondary rounded"
+                >
+                  Administrator name
                 </div>
-                <div class="author_article ps-4">
-                    <p class="d-block p-2 fs-5 text fw-bold">
-                      Fullname:<br>
-                        <div class="author_name bg-white p-3 mb-2 rounded">
-                            <input type="text" 
-                            class="form-control border border-white" 
-                            placeholder="Fullname" 
-                            aria-describedby="addon-wrapping"> 
-                        </div>
-                    </p>
+              </div>
+              <div class="student_id">
+                <p class="fs-5 text fw-bold">dministrator ID</p>
+                <div
+                  class="p-2 mb-4 bg-white text-dark border border-secondary rounded"
+                >
+                  AD001234
                 </div>
-                <div class="author_article ps-4">
-                    <p class="d-block p-2 fs-5 text fw-bold">
-                      Email:<br>
-                        <div class="author_name bg-white p-3 mb-2 rounded">
-                            <input type="email" 
-                            class="form-control border border-white" 
-                            placeholder="Email" 
-                            aria-describedby="addon-wrapping"> 
-                        </div>
-                    </p>
+              </div>
+              <div class="email_user">
+                <p class="fs-5 text fw-bold">Email</p>
+                <div
+                  class="p-2 mb-4 bg-white text-dark border border-secondary rounded"
+                >
+                  administrator@example.com
                 </div>
-                <div class="author_article ps-4">
-                    <p class="d-block p-2 fs-5 text fw-bold">
-                      Password:<br>
-                      <div class="status bg-white p-3 mb-2 rounded d-flex">
-                        <input class="border border-white w-100 p-2" type="password" value="123456789" id="myInput">
-                        <input type="checkbox" class="w-auto" onclick="myFunction()">
-                        <span class="mt-2">Show</span>
+              </div>
+              <div class="password_user">
+                <p class="fs-5 text fw-bold">Password</p>
+                <div
+                  class="p-2 bg-white text-dark border border-secondary rounded"
+                >
+                  <input
+                    class="border border-white"
+                    type="password"
+                    name=""
+                    id="myPassword"
+                    value="123456789"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn_edit_psw float-end text-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                </div>
+                <div class="showPassword d-flex w-auto mb-4">
+                  <input type="checkbox" onclick="myFunction()" />
+                  <span class="ms-2">Show Password</span>
+                </div>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title fs-3 text"
+                          id="exampleModalLabel"
+                        >
+                          Change Password
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                       </div>
-                    </p>
-                </div>
-                <div class="status_publish ps-4">
-                    <p class="d-block p-2 fs-5 text fw-bold">
-                        Role: <br>
-                        <div class="status bg-white p-3 mb-2 rounded">
-                            <select class="form-select border border-white" id="floatingSelect" aria-label="Floating label select example">
-                                <option selected>Select Role: </option>
-                                <option value="1">Student</option>
-                                <option value="2">Marketing Coordinator</option>
-                              </select>
+                      <div class="modal-body">
+                        <div class="mainDiv">
+                          <div class="cardStyle">
+                            <form
+                              action=""
+                              method="post"
+                              name="signupForm"
+                              id="signupForm"
+                            >
+                              <div class="inputDiv">
+                                <label class="inputLabel" for="password"
+                                  >Current Password</label
+                                >
+                                <input
+                                  type="password"
+                                  id="currentPassword"
+                                  name="password"
+                                  required
+                                />
+                                <div class="showPassword d-flex w-auto">
+                                  <input
+                                    type="checkbox"
+                                    onclick="showCurrent()"
+                                  />
+                                  <span class="ms-2">Show Password</span>
+                                </div>
+                              </div>
+
+                              <div class="inputDiv">
+                                <label class="inputLabel" for="password"
+                                  >New Password</label
+                                >
+                                <input
+                                  type="password"
+                                  id="newPassword"
+                                  name="password"
+                                  required
+                                />
+                                <div class="showPassword d-flex w-auto">
+                                  <input type="checkbox" onclick="showNew()" />
+                                  <span class="ms-2">Show Password</span>
+                                </div>
+                              </div>
+
+                              <div class="inputDiv">
+                                <label class="inputLabel" for="confirmPassword"
+                                  >Confirm Password</label
+                                >
+                                <input
+                                  type="password"
+                                  id="confirmPassword"
+                                  name="confirmPassword"
+                                />
+                                <div class="showPassword d-flex w-auto">
+                                  <input
+                                    type="checkbox"
+                                    onclick="showConfirm()"
+                                  />
+                                  <span class="ms-2">Show Password</span>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
                         </div>
-                    </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="btn_group ps-4 mt-5">
-                    <button type="button" class="btn btn-outline-success btn-lg me-3">
-                        <i class="fa-regular fa-floppy-disk"></i> Save
-                    </button>
-                    <button type="button" class="btn btn-outline-warning btn-lg me-3">
-                        <i class="fa-solid fa-arrow-rotate-left"></i> Reset
-                    </button>
+              </div>
+              <div class="major">
+                <p class="fs-5 text fw-bold">Year of participation</p>
+                <div
+                  class="p-2 mb-4 bg-white text-dark border border-secondary rounded"
+                >
+                  2020
                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      <script src="/asset/js/main.js"></script>
     </section>
     <!-- Footer -->
     <footer>
@@ -336,13 +454,45 @@
       }
 
       function myFunction() {
-            var x = document.getElementById("myInput");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
+        var x = document.getElementById("myPassword");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
         }
+      }
+      function showCurrent() {
+        var x = document.getElementById("currentPassword");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+      function showNew() {
+        var x = document.getElementById("newPassword");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+      function showConfirm() {
+        var x = document.getElementById("confirmPassword");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+      function mobileFunction() {
+        var x = document.getElementById("mobilePassword");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
     </script>
   </body>
 </html>
