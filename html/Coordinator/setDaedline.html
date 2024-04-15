@@ -77,16 +77,6 @@
               >
                 <i class="fa-solid fa-user"></i>
               </a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="profile.html">Profile</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
             </div>
           </div>
         </section>
@@ -110,14 +100,27 @@
             <li>
               <a href="profile.html">Profile</a>
             </li>
+            <li>
+              <a href="#">
+                Log out
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="right_category">
           <div class="top_page container">
-            <div class="top_page_nav d-flex">
-              <p>HOME</p>
-              <span></span>
-              <p>All Submission</p>
+            <div class="wrap">
+              <div class="search">
+                <input
+                  type="text"
+                  class="searchTerm"
+                  placeholder="searching...."
+                />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
             </div>
             <a class="sidebar_mobile" href="#" onclick="showSidebar()">
               <i class="fa-solid fa-bars"></i>
@@ -143,6 +146,12 @@
               <li>
                 <a href="profile.html">Profile</a>
               </li>
+              <li>
+                <a href="#">
+                  Log out
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+              </li>
             </ul>
           </div>
           <nav class="subnavigate">
@@ -150,9 +159,16 @@
               <li class="active">Create New</li>
               <li>Created</li>
             </ul>
-            <button>
-              <i class="fa-solid fa-filter"></i>
-            </button>
+            <div class="submenu">
+              <button type="button" class="submenu-toggle">
+                <i class="fa-solid fa-filter"></i>
+              </button>
+              <ul class="submenu-content">
+                <li><a href="#">Filter Option 1</a></li>
+                <li><a href="#">Filter Option 2</a></li>
+                <li><a href="#">Filter Option 3</a></li>
+              </ul>
+            </div>
           </nav>
           <div id="create-new" class="content_table active">
             <div class="set-new container">
@@ -223,7 +239,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -252,7 +268,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -281,7 +297,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -310,7 +326,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -339,7 +355,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -368,7 +384,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -397,36 +413,7 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
-                          <a
-                            href="editDeadline.html"
-                            class="comment_btn"
-                            type="button"
-                          >
-                            <i class="fa-solid fa-pen-to-square"></i>
-                          </a>
-                          <button class="download_btn" type="button">
-                            <i class="fa-solid fa-trash"></i>
-                          </button>
-                          <a
-                            href="showMoreInfoDL.html"
-                            class="see_btn"
-                            type="button"
-                          >
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <p class="semester_name">Semester’s Name</p>
-                        </td>
-                        <td class="submission_round">Submission Round Name</td>
-                        <td class="deadline">
-                          Friday - 29/03/2024 <br />
-                          11:59 PM
-                        </td>
-                        <td class="action">
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -455,7 +442,36 @@
                           Friday - 29/03/2024 <br />
                           11:59 PM
                         </td>
-                        <td class="action">
+                        <td class="action text-center">
+                          <a
+                            href="editDeadline.html"
+                            class="comment_btn"
+                            type="button"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i>
+                          </a>
+                          <!-- <button class="download_btn" type="button">
+                            <i class="fa-solid fa-trash"></i>
+                          </button> -->
+                          <a
+                            href="showMoreInfoDL.html"
+                            class="see_btn"
+                            type="button"
+                          >
+                            <i class="fa-solid fa-circle-info"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          <p class="semester_name">Semester’s Name</p>
+                        </td>
+                        <td class="submission_round">Submission Round Name</td>
+                        <td class="deadline">
+                          Friday - 29/03/2024 <br />
+                          11:59 PM
+                        </td>
+                        <td class="action text-center">
                           <a
                             href="editDeadline.html"
                             class="comment_btn"
@@ -614,6 +630,22 @@
           menuSidebar.style.display = "none";
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const submenuToggle = document.querySelector(".submenu-toggle");
+        const submenuContent = document.querySelector(".submenu-content");
+
+        if (submenuToggle && submenuContent) {
+          submenuToggle.addEventListener("click", function () {
+            // Toggle hiển thị của submenu
+            if (submenuContent.style.display === "none") {
+              submenuContent.style.display = "block";
+            } else {
+              submenuContent.style.display = "none";
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>

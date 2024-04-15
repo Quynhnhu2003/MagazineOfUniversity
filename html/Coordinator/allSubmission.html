@@ -110,6 +110,12 @@
             <li>
               <a href="profile.html">Profile</a>
             </li>
+            <li>
+              <a href="#">
+                Log out
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="right_category">
@@ -150,6 +156,12 @@
               <li>
                 <a href="profile.html">Profile</a>
               </li>
+              <li>
+                <a href="#">
+                  Log out
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+              </li>
             </ul>
           </div>
           <nav class="subnavigate">
@@ -158,9 +170,16 @@
               <li>Submitted</li>
               <li>Unsubmitted</li>
             </ul>
-            <button>
-              <i class="fa-solid fa-filter"></i>
-            </button>
+            <div class="submenu">
+              <button type="button" class="submenu-toggle">
+                <i class="fa-solid fa-filter"></i>
+              </button>
+              <ul class="submenu-content">
+                <li><a href="#">Filter Option 1</a></li>
+                <li><a href="#">Filter Option 2</a></li>
+                <li><a href="#">Filter Option 3</a></li>
+              </ul>
+            </div>
           </nav>
 
           <div id="all-submissions" class="content_table active">
@@ -1043,6 +1062,22 @@
           menuSidebar.style.display = "none";
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const submenuToggle = document.querySelector(".submenu-toggle");
+        const submenuContent = document.querySelector(".submenu-content");
+
+        if (submenuToggle && submenuContent) {
+          submenuToggle.addEventListener("click", function () {
+            // Toggle hiển thị của submenu
+            if (submenuContent.style.display === "none") {
+              submenuContent.style.display = "block";
+            } else {
+              submenuContent.style.display = "none";
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>

@@ -110,14 +110,27 @@
             <li>
               <a href="profile.html">Profile</a>
             </li>
+            <li>
+              <a href="#">
+                Log out
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="right_category">
           <div class="top_page container">
-            <div class="top_page_nav d-flex">
-              <p>HOME</p>
-              <span></span>
-              <p>All Submission</p>
+            <div class="wrap">
+              <div class="search">
+                <input
+                  type="text"
+                  class="searchTerm"
+                  placeholder="searching...."
+                />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
             </div>
             <a class="sidebar_mobile" href="#" onclick="showSidebar()">
               <i class="fa-solid fa-bars"></i>
@@ -143,6 +156,12 @@
               <li>
                 <a href="profile.html">Profile</a>
               </li>
+              <li>
+                <a href="#">
+                  Log out
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+              </li>
             </ul>
           </div>
           <nav class="subnavigate">
@@ -150,9 +169,16 @@
               <li class="active">Reviewed Submissions</li>
               <li>Unreviewed Submissions</li>
             </ul>
-            <button>
-              <i class="fa-solid fa-filter"></i>
-            </button>
+            <div class="submenu">
+              <button type="button" class="submenu-toggle">
+                <i class="fa-solid fa-filter"></i>
+              </button>
+              <ul class="submenu-content">
+                <li><a href="#">Filter Option 1</a></li>
+                <li><a href="#">Filter Option 2</a></li>
+                <li><a href="#">Filter Option 3</a></li>
+              </ul>
+            </div>
           </nav>
           <div id="reviewed-submissions" class="content_table active">
             <div class="table-responsive-lg">
@@ -890,6 +916,21 @@
           menuSidebar.style.display = "none";
         }
       }
+      document.addEventListener("DOMContentLoaded", function () {
+        const submenuToggle = document.querySelector(".submenu-toggle");
+        const submenuContent = document.querySelector(".submenu-content");
+
+        if (submenuToggle && submenuContent) {
+          submenuToggle.addEventListener("click", function () {
+            // Toggle hiển thị của submenu
+            if (submenuContent.style.display === "none") {
+              submenuContent.style.display = "block";
+            } else {
+              submenuContent.style.display = "none";
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>
