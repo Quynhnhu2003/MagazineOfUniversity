@@ -655,3 +655,21 @@ input:disabled {
     right: 0;
   }
 }
+.btn_comment {
+  position: relative;
+}
+span.comment-count {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
