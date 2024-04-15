@@ -1,3 +1,112 @@
+@media only screen and (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+  }
+  .slider {
+    width: 100%;
+  }
+  .hero nav ul li a.category {
+    width: 350px;
+  }
+  .slider .list .item img {
+    width: 75%;
+    height: 50%;
+    left: 25%;
+  }
+  .slider .list .item .hot_news_introduction {
+    right: 20%;
+    text-align: justify;
+  }
+  .post {
+    padding: 50px 0;
+  }
+  .post_item {
+    width: 37%;
+  }
+  .post_item .content button {
+    left: 70%;
+    bottom: 4%;
+  }
+  .category_container .title_container,
+  .category_container .title_container .subcategory li {
+    width: 99%;
+  }
+  .category {
+    padding: 30px 0;
+  }
+  .categories {
+    max-width: 1137px;
+  }
+  .it,
+  .business,
+  .design {
+    width: 94%;
+    max-height: 100%;
+  }
+  .categories_right {
+    right: -2%;
+  }
+  .categories_post .post {
+    width: 100%;
+  }
+  .viewall {
+    left: 69%;
+  }
+  .footer {
+    width: 95%;
+    margin: 100px 0px 0 10px;
+  }
+  .block {
+    left: 30%;
+  }
+  .contact_footer {
+    padding: 30px 40px;
+  }
+  .left_category {
+    width: 22%;
+  }
+  .list_filter {
+    width: 100%;
+  }
+  .filter_category button {
+    left: 26%;
+  }
+  .sub li p,
+  .newest_post_filter li p,
+  .top_reads_filter li p {
+    width: 55%;
+  }
+  .left_category .title_left i.filter {
+    left: 3%;
+  }
+  .category_filter i {
+    left: 43%;
+  }
+  .right_category {
+    margin-left: 20px;
+    width: 78%;
+  }
+  .article_items {
+    width: 49%;
+    margin: 30px 0 20px 0px;
+  }
+  .top_page {
+    justify-content: left;
+  }
+  .result {
+    justify-content: space-between;
+  }
+  .result .article_items {
+    width: 48%;
+  }
+  .search_input[type="text"] {
+    width: 70%;
+  }
+  .line {
+    width: 415px;
+  }
+}
+
 /* Tablet */
 @media screen and (min-width: 740px) and (max-width: 1024px) {
   body {

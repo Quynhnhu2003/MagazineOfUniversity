@@ -317,6 +317,9 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+.password_user input {
+  width: 75%;
+}
 .mainDiv {
   display: flex;
   min-height: 100%;
