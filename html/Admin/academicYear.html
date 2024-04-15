@@ -77,16 +77,6 @@
               >
                 <i class="fa-solid fa-user"></i>
               </a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="profile.html">Profile</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="dashboard.html">Dashboard</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
             </div>
           </div>
         </section>
@@ -113,42 +103,68 @@
               <a href="categories.html">Categories</a>
             </li>
             <li>
-              <a href="#">Articles</a>
+              <a href="profile.html">Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                Log out
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
             </li>
           </ul>
         </div>
         <div class="right_category">
-          <div class="top_page">
-            <a class="sidebar_mobile" href="#" onclick="showSidebar()">
-              <i class="fa-solid fa-bars"></i>
-            </a>
-            <div class="menu_sidebar">
-              <a class="hideSidebar" href="#" onclick="hideSidebar()">
-                <i class="fa-solid fa-xmark"></i>
+          <div class="top_page d-flex justify-content-between">
+            <div class="mobile">
+              <a class="sidebar_mobile" href="#" onclick="showSidebar()">
+                <i class="fa-solid fa-bars"></i>
               </a>
-              <ul>
-                <li>
-                  <a href="dashboard.html">Dashboard</a>
-                </li>
-                <li class="active_link">
-                  <a href="academicYear.html">Academic Year</a>
-                </li>
-                <li>
-                  <a href="semester.html">Semester</a>
-                </li>
-                <li>
-                  <a href="faculty.html">Faculty</a>
-                </li>
-                <li>
-                  <a href="account.html">Accounts</a>
-                </li>
-                <li>
-                  <a href="categories.html">Categories</a>
-                </li>
-                <li>
-                  <a href="#">Articles</a>
-                </li>
-              </ul>
+              <div class="menu_sidebar">
+                <a class="hideSidebar" href="#" onclick="hideSidebar()">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
+                <ul>
+                  <li>
+                    <a href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="active_link">
+                    <a href="academicYear.html">Academic Year</a>
+                  </li>
+                  <li>
+                    <a href="semester.html">Semester</a>
+                  </li>
+                  <li>
+                    <a href="faculty.html">Faculty</a>
+                  </li>
+                  <li>
+                    <a href="account.html">Accounts</a>
+                  </li>
+                  <li>
+                    <a href="categories.html">Categories</a>
+                  </li>
+                  <li>
+                    <a href="profile.html">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Log out
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="wrap">
+              <div class="search">
+                <input
+                  type="text"
+                  class="searchTerm"
+                  placeholder="searching...."
+                />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
             </div>
           </div>
           <nav class="subnavigate">
@@ -160,9 +176,16 @@
                 <a href="createAcademicYear.html"> Create New </a>
               </li>
             </ul>
-            <button>
-              <i class="fa-solid fa-filter"></i>
-            </button>
+            <div class="submenu">
+              <button type="button" class="submenu-toggle">
+                <i class="fa-solid fa-filter"></i>
+              </button>
+              <ul class="submenu-content">
+                <li><a href="#">Filter Option 1</a></li>
+                <li><a href="#">Filter Option 2</a></li>
+                <li><a href="#">Filter Option 3</a></li>
+              </ul>
+            </div>
           </nav>
 
           <div id="manage_academic">
@@ -453,6 +476,22 @@
           menuSidebar.style.display = "none";
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const submenuToggle = document.querySelector(".submenu-toggle");
+        const submenuContent = document.querySelector(".submenu-content");
+
+        if (submenuToggle && submenuContent) {
+          submenuToggle.addEventListener("click", function () {
+            // Toggle hiển thị của submenu
+            if (submenuContent.style.display === "none") {
+              submenuContent.style.display = "block";
+            } else {
+              submenuContent.style.display = "none";
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>

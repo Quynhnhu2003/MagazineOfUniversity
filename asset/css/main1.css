@@ -84,11 +84,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
-.subnavigate button {
+.submenu button {
   outline: none;
   border: none;
   background: none;
   font-size: 20px;
+  margin-right: 5%;
 }
 .subnavigate ul,
 .sub_nav ul {
@@ -148,6 +149,7 @@ a:hover {
 }
 .table_submission tbody tr td {
   padding: 20px 40px;
+  text-align: center;
 }
 .table_submission tbody tr td p,
 .table_feedback tbody tr td p {
@@ -619,4 +621,37 @@ input:disabled {
 .input-group {
   max-height: calc(100vh - 200px);
   min-height: 100px;
+}
+
+.note_content {
+  min-height: 400px;
+}
+.submenu {
+  position: relative;
+  right: 5%;
+}
+
+.submenu-content.active {
+  display: block;
+}
+
+.submenu-content {
+  position: absolute;
+  width: 210px;
+  top: 70%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideFromRight 0.3s ease;
+  display: none;
+}
+
+@keyframes slideFromRight {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
 }

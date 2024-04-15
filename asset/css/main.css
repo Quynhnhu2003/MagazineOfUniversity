@@ -1199,7 +1199,7 @@ footer {
   padding: 30px 12px;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .top_page p {
   font-size: 18px;

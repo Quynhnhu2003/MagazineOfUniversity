@@ -72,15 +72,6 @@
               >
                 <i class="fa-solid fa-user"></i>
               </a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li>
-                  <a class="dropdown-item" href="submission.html">Dashboard</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Recently seen</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
             </div>
           </div>
         </section>
@@ -107,7 +98,13 @@
               <a href="categories.html">Categories</a>
             </li>
             <li>
-              <a href="#">Articles</a>
+              <a href="profile.html">Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                Log out
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -140,7 +137,13 @@
                   <a href="categories.html">Categories</a>
                 </li>
                 <li>
-                  <a href="#">Articles</a>
+                  <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="#">
+                    Log out
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -155,9 +158,6 @@
                 <a href="createSemester.html">Create New</a>
             </li>
             </ul>
-            <button>
-              <i class="fa-solid fa-filter"></i>
-            </button>
           </nav>
 
           <div id="create_new">
@@ -201,7 +201,7 @@
                     </div>
                 </p>
             </div>
-            <div class="status_publish ps-4">
+            <!-- <div class="status_publish ps-4">
                 <p class="d-block p-2 fs-5 text fw-bold">
                     Submission Round: <br>
                     <div class="status bg-white p-3 mb-2 rounded">
@@ -234,15 +234,13 @@
                         aria-describedby="addon-wrapping">
                     </div>
                 </p>
-            </div>
-            <div class="feedback_content ps-4">
+            </div> -->
+            <div class="note_content ps-4 w-100">
                 <p class="d-block p-2 fs-5 text fw-bold">
                 Note: <br>
                     <div class="content_container bg-white p-3 mb-2 rounded">
-                        <input type="text" 
-                        class="form-control text-break border border-white" 
-                        placeholder="Note" 
-                        aria-describedby="addon-wrapping">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      <input type="submit" value="Submit">
                     </div>
                 </p>
             </div>

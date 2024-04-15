@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
   body {
     min-width: 1025px;
   }
@@ -111,6 +111,9 @@
   .select_topic ol.column_list {
     column-count: 4;
     column-gap: 120px;
+  }
+  .submenu-content {
+    width: 150px !important;
   }
 }
 
@@ -707,6 +710,9 @@
     padding: 15px;
     width: 240px;
     margin: 50px 45px 0 0;
+  }
+  .submenu-content {
+    width: 150px !important;
   }
 }
 
@@ -1465,5 +1471,8 @@
   th.role,
   .table_submission tbody tr td.role {
     display: none;
+  }
+  .submenu-content {
+    width: 150px !important;
   }
 }
