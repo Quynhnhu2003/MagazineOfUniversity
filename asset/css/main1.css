@@ -673,3 +673,16 @@ span.comment-count {
   font-size: 12px;
   font-weight: bold;
 }
+.right_semester {
+  position: relative;
+  top: 5%;
+  left: 10%;
+  width: 50%;
+}
+.note_content .content_container {
+  min-height: 400px;
+}
+.dateline_1,
+.dateline_2 {
+  width: 100%;
+}

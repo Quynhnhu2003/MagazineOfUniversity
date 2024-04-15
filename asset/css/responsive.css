@@ -714,6 +714,13 @@
   .submenu-content {
     width: 150px !important;
   }
+  .right_semester {
+    width: 50%;
+    left: 0;
+  }
+  .note_content .content_container {
+    min-height: 376px;
+  }
 }
 
 /* Mobile */
@@ -1474,5 +1481,12 @@
   }
   .submenu-content {
     width: 150px !important;
+  }
+  .right_semester {
+    width: 50%;
+    left: 0;
+  }
+  .note_content .content_container {
+    min-height: 376px;
   }
 }
