@@ -105,6 +105,13 @@
   .line {
     width: 415px;
   }
+  .details_submission {
+    width: 100%;
+  }
+  .select_topic ol.column_list {
+    column-count: 4;
+    column-gap: 120px;
+  }
 }
 
 /* Tablet */
